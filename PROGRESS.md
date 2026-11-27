@@ -11,3 +11,7 @@
 - [x] Uninstall (multisite aware)
 - [x] Unit + integration tests, PHPCS, PHPStan, CI
 - [x] Real-browser end-to-end check on PHP 7.4 + WP 6.5 and newer PHP/WP
+
+## CI fixes (2026-11-27)
+
+- [x] install-wp-tests.sh tag matching for WP 6.5 integration matrix
