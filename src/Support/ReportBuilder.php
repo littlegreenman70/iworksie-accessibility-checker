@@ -53,6 +53,44 @@ final class ReportBuilder {
 	}
 
 	/**
+	 * Count-aware "N elements across M types" line for the report summary.
+	 *
+	 * @param string $prefix Leading label, e.g. "Problems".
+	 * @param int    $nodes  Element count.
+	 * @param int    $rules  Issue-type count.
+	 * @return string
+	 */
+	public static function nodes_across_rules_line( $prefix, $nodes, $rules ) {
+		$nodes = (int) $nodes;
+		$rules = (int) $rules;
+		return sprintf(
+			/* translators: 1: number of elements, 2: number of rules. %3$s is a translated label such as "Problems". */
+			_n( '%3$s: %1$d element across %2$d types of issue', '%3$s: %1$d elements across %2$d types of issue', $nodes, 'iworksie-accessibility-checker' ),
+			$nodes,
+			$rules,
+			$prefix
+		);
+	}
+
+	/**
+	 * Count-aware "N elements on M pages" line.
+	 *
+	 * @param int $nodes Element count.
+	 * @param int $pages Page count.
+	 * @return string
+	 */
+	public static function elements_on_pages_line( $nodes, $pages ) {
+		$nodes = (int) $nodes;
+		$pages = (int) $pages;
+		return sprintf(
+			/* translators: 1: number of elements, 2: number of pages */
+			_n( '%1$s element on %2$s pages', '%1$s elements on %2$s pages', $nodes, 'iworksie-accessibility-checker' ),
+			number_format_i18n( $nodes ),
+			number_format_i18n( $pages )
+		);
+	}
+
+	/**
 	 * Translated label for a criterion status.
 	 *
 	 * @param string $status fail|review|pass|manual.
@@ -92,17 +130,19 @@ final class ReportBuilder {
 		if ( $totals['last_scanned'] > 0 ) {
 			$lines[] = '- ' . __( 'Last page checked', 'iworksie-accessibility-checker' ) . ': ' . wp_date( 'Y-m-d H:i', $totals['last_scanned'] );
 		}
-		$lines[] = '- ' . __( 'Pages checked', 'iworksie-accessibility-checker' ) . ': ' . $totals['ok_pages'] . ( $totals['error_pages'] > 0 ? ' (' . sprintf( /* translators: %d: number of pages */ __( '%d could not be checked', 'iworksie-accessibility-checker' ), $totals['error_pages'] ) . ')' : '' );
+		$lines[] = '- ' . __( 'Pages checked', 'iworksie-accessibility-checker' ) . ': ' . $totals['ok_pages'] . ( $totals['error_pages'] > 0 ? ' (' . sprintf(
+			/* translators: %d: number of pages */
+			_n( '%d could not be checked', '%d could not be checked', (int) $totals['error_pages'], 'iworksie-accessibility-checker' ),
+			(int) $totals['error_pages']
+		) . ')' : '' );
 		$lines[] = '- ' . __( 'Standard', 'iworksie-accessibility-checker' ) . ': WCAG 2.2 Level AA; EN 301 549 v3.2.1 ' . __( 'clause 9 (web content)', 'iworksie-accessibility-checker' );
 		$lines[] = '- ' . __( 'Tool', 'iworksie-accessibility-checker' ) . ': iWorks.ie Accessibility Checker ' . IWIEAC_VERSION . ', axe-core ' . Plugin::AXE_VERSION;
 		$lines[] = '';
 
 		$lines[] = '## ' . __( 'Summary', 'iworksie-accessibility-checker' );
 		$lines[] = '';
-		/* translators: 1: number of elements, 2: number of rules */
-		$lines[] = '- ' . sprintf( __( 'Problems: %1$d elements across %2$d types of issue', 'iworksie-accessibility-checker' ), $totals['problem_nodes'], $totals['problem_rules'] );
-		/* translators: 1: number of elements, 2: number of rules */
-		$lines[] = '- ' . sprintf( __( 'Needs review: %1$d elements across %2$d types of issue', 'iworksie-accessibility-checker' ), $totals['review_nodes'], $totals['review_rules'] );
+		$lines[] = '- ' . self::nodes_across_rules_line( __( 'Problems', 'iworksie-accessibility-checker' ), (int) $totals['problem_nodes'], (int) $totals['problem_rules'] );
+		$lines[] = '- ' . self::nodes_across_rules_line( __( 'Needs review', 'iworksie-accessibility-checker' ), (int) $totals['review_nodes'], (int) $totals['review_rules'] );
 		/* translators: 1: pages without problems, 2: pages checked */
 		$lines[] = '- ' . sprintf( __( 'Pages with no automated problems: %1$d of %2$d', 'iworksie-accessibility-checker' ), $totals['clean_pages'], $totals['ok_pages'] );
 		$fails   = 0;
@@ -111,12 +151,18 @@ final class ReportBuilder {
 				++$fails;
 			}
 		}
-		/* translators: %d: number of success criteria */
-		$lines[]   = '- ' . sprintf( __( 'WCAG 2.2 AA success criteria with automated failures: %d', 'iworksie-accessibility-checker' ), $fails );
+		$lines[] = '- ' . sprintf(
+			/* translators: %d: number of success criteria */
+			_n( 'WCAG 2.2 AA success criterion with automated failures: %d', 'WCAG 2.2 AA success criteria with automated failures: %d', $fails, 'iworksie-accessibility-checker' ),
+			$fails
+		);
 		$dismissed = Dismissals::count();
 		if ( $dismissed > 0 ) {
-			/* translators: %d: number of dismissed items */
-			$lines[] = '- ' . sprintf( __( 'Items dismissed by a person (with reasons, listed in the plugin): %d', 'iworksie-accessibility-checker' ), $dismissed );
+			$lines[] = '- ' . sprintf(
+				/* translators: %d: number of dismissed items */
+				_n( 'Item dismissed by a person (with reasons, listed in the plugin): %d', 'Items dismissed by a person (with reasons, listed in the plugin): %d', $dismissed, 'iworksie-accessibility-checker' ),
+				$dismissed
+			);
 		}
 		$lines[] = '';
 
@@ -167,8 +213,7 @@ final class ReportBuilder {
 				$lines[] = '';
 				$lines[] = '- ' . __( 'Impact', 'iworksie-accessibility-checker' ) . ': ' . Wcag::impact_label( $row['impact'] );
 				$lines[] = '- WCAG: ' . ( empty( $scs ) ? __( 'Best practice (not a WCAG requirement)', 'iworksie-accessibility-checker' ) : implode( ', ', $scs ) );
-				/* translators: 1: number of elements, 2: number of pages */
-				$lines[] = '- ' . sprintf( __( '%1$d elements on %2$d pages', 'iworksie-accessibility-checker' ), $row['nodes'], $row['pages'] );
+				$lines[] = '- ' . self::elements_on_pages_line( (int) $row['nodes'], (int) $row['pages'] );
 				$lines[] = '- ' . __( 'Rule', 'iworksie-accessibility-checker' ) . ': `' . $row['rule_id'] . '`' . ( ! empty( $meta['help_url'] ) ? ' (' . $meta['help_url'] . ')' : '' );
 				if ( 'violation' === $kind ) {
 					if ( '' !== $guide['why'] ) {
@@ -183,8 +228,12 @@ final class ReportBuilder {
 					$lines[] = '  - ' . $page['label'] . ': ' . $page['url'] . ' (' . (int) $page['nodes'] . ')';
 				}
 				if ( $row['pages'] > 10 ) {
-					/* translators: %d: number of further pages */
-					$lines[] = '  - ' . sprintf( __( '…and %d more pages', 'iworksie-accessibility-checker' ), $row['pages'] - 10 );
+					$more_pages = (int) $row['pages'] - 10;
+					$lines[]    = '  - ' . sprintf(
+						/* translators: %d: number of further pages */
+						_n( '…and %d more page', '…and %d more pages', $more_pages, 'iworksie-accessibility-checker' ),
+						$more_pages
+					);
 				}
 				$lines[] = '';
 			}

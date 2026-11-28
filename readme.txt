@@ -100,4 +100,5 @@ WCAG 2.0, 2.1 and 2.2 at Levels A and AA (the level required by EN 301 549 and t
 == Changelog ==
 
 = 1.0.0 =
+* Fix count-aware plural strings in the report, issues list and scan-finished message.
 * First release.

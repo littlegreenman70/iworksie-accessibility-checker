@@ -24,6 +24,13 @@
 		});
 	}
 
+	function plural(singular, pluralForm, count) {
+		if (window.wp && wp.i18n && typeof wp.i18n._n === 'function') {
+			return wp.i18n.sprintf(wp.i18n._n(singular, pluralForm, count, 'iworksie-accessibility-checker'), count);
+		}
+		return format(count === 1 ? singular : pluralForm, count);
+	}
+
 	function post(action, data) {
 		var body = new FormData();
 		body.append('action', 'iwieac_' + action);
@@ -374,8 +381,9 @@
 			}
 			if (index >= total) {
 				setRunning(false);
-				setProgress(total, total, format(S.done, total));
-				announce(format(S.done, total));
+				var doneMsg = plural(S.doneSingular || 'Finished. %d page checked.', S.donePlural || 'Finished. %d pages checked.', total);
+				setProgress(total, total, doneMsg);
+				announce(doneMsg);
 				var resume = document.querySelector('[data-iwieac-resume]');
 				if (resume) {
 					resume.hidden = true;

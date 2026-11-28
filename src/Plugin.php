@@ -149,7 +149,8 @@ final class Plugin {
 		$queue    = Queue::get();
 
 		wp_enqueue_style( 'iwieac-admin', IWIEAC_URL . 'assets/css/admin.css', array( 'iwieac-iwt-core' ), IWIEAC_VERSION );
-		wp_enqueue_script( 'iwieac-admin', IWIEAC_URL . 'assets/js/admin.js', array( 'iwieac-iwt-core' ), IWIEAC_VERSION, true );
+		wp_enqueue_script( 'iwieac-admin', IWIEAC_URL . 'assets/js/admin.js', array( 'iwieac-iwt-core', 'wp-i18n' ), IWIEAC_VERSION, true );
+		wp_set_script_translations( 'iwieac-admin', 'iworksie-accessibility-checker' );
 		wp_localize_script(
 			'iwieac-admin',
 			'iwieacAdmin',
@@ -170,7 +171,9 @@ final class Plugin {
 					/* translators: %s: page title */
 					'scanningOne'   => __( 'Checking %s…', 'iworksie-accessibility-checker' ),
 					/* translators: %d: number of pages */
-					'done'          => __( 'Finished. %d pages checked.', 'iworksie-accessibility-checker' ),
+					'doneSingular'  => __( 'Finished. %d page checked.', 'iworksie-accessibility-checker' ),
+					/* translators: %d: number of pages */
+					'donePlural'    => __( 'Finished. %d pages checked.', 'iworksie-accessibility-checker' ),
 					'doneOne'       => __( 'Finished.', 'iworksie-accessibility-checker' ),
 					'cancelled'     => __( 'Stopped. Results so far are saved and you can resume later.', 'iworksie-accessibility-checker' ),
 					/* translators: 1: number of problem elements, 2: number of needs-review items */

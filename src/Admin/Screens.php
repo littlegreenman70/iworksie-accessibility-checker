@@ -613,8 +613,19 @@ final class Screens {
 		}
 		echo '</ul>';
 		if ( $total > count( $issue['nodes'] ) ) {
-			/* translators: %d: number of elements not listed */
-			echo '<p class="description">' . esc_html( sprintf( __( '%d more elements are not listed. Fix the ones above and check again.', 'iworksie-accessibility-checker' ), $total - count( $issue['nodes'] ) ) ) . '</p>';
+			$more = $total - count( $issue['nodes'] );
+			echo '<p class="description">' . esc_html(
+				sprintf(
+					/* translators: %d: number of elements not listed */
+					_n(
+						'%d more element is not listed. Fix the ones above and check again.',
+						'%d more elements are not listed. Fix the ones above and check again.',
+						$more,
+						'iworksie-accessibility-checker'
+					),
+					$more
+				)
+			) . '</p>';
 		}
 		echo '</div></article>';
 	}
@@ -696,8 +707,7 @@ final class Screens {
 				echo '<h3 class="iwt-result__heading"><button type="button" class="iwt-result__toggle" aria-expanded="false" aria-controls="' . esc_attr( $panel_id ) . '">';
 				echo '<span class="iwt-result__title">' . esc_html( $guide['title'] ) . '</span><span class="iwt-result__meta">';
 				echo self::impact_badge( $row['impact'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				/* translators: 1: elements, 2: pages */
-				echo '<span class="iwieac-count">' . esc_html( sprintf( __( '%1$s elements on %2$s pages', 'iworksie-accessibility-checker' ), number_format_i18n( $row['nodes'] ), number_format_i18n( $row['pages'] ) ) ) . '</span>';
+				echo '<span class="iwieac-count">' . esc_html( \IWorksIE\AccessibilityChecker\Support\ReportBuilder::elements_on_pages_line( (int) $row['nodes'], (int) $row['pages'] ) ) . '</span>';
 				echo '<span class="iwt-result__chevron" aria-hidden="true"></span></span></button></h3>';
 				echo '<div class="iwt-result__body" id="' . esc_attr( $panel_id ) . '" hidden>';
 				self::guide_html( $guide, $meta, $kind );
@@ -709,8 +719,14 @@ final class Screens {
 				}
 				echo '</ul>';
 				if ( $row['pages'] > 25 ) {
-					/* translators: %d: number of pages */
-					echo '<p class="description">' . esc_html( sprintf( __( '…and %d more. The Pages tab lists them all.', 'iworksie-accessibility-checker' ), $row['pages'] - 25 ) ) . '</p>';
+					$more_pages = $row['pages'] - 25;
+					echo '<p class="description">' . esc_html(
+						sprintf(
+							/* translators: %d: number of pages */
+							_n( '…and %d more page. The Pages tab lists them all.', '…and %d more pages. The Pages tab lists them all.', $more_pages, 'iworksie-accessibility-checker' ),
+							$more_pages
+						)
+					) . '</p>';
 				}
 				self::dismiss_form( $row['rule_id'], Dismissals::ALL_TARGETS, 0 );
 				echo '</div></article>';

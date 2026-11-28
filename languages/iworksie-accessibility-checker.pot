@@ -9,30 +9,29 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-27T00:22:59+00:00\n"
+"POT-Creation-Date: 2026-11-28T17:50:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: iworksie-accessibility-checker\n"
 
 #. Plugin Name of the plugin
-#: iworksie-accessibility-checker.php:3
+#: iworksie-accessibility-checker.php
 msgid "iWorks.ie Accessibility Checker"
 msgstr ""
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
-#: iworksie-accessibility-checker.php:4
-#: iworksie-accessibility-checker.php:10
+#: iworksie-accessibility-checker.php
 msgid "https://www.iworks.ie"
 msgstr ""
 
 #. Description of the plugin
-#: iworksie-accessibility-checker.php:5
+#: iworksie-accessibility-checker.php
 msgid "Free full-site accessibility checker built on axe-core. Plain-English fixes and a WCAG 2.2 AA / EN 301 549 report. No overlay, no upsells, nothing sent to third parties."
 msgstr ""
 
 #. Author of the plugin
-#: iworksie-accessibility-checker.php:9
+#: iworksie-accessibility-checker.php
 msgid "iWorks.ie"
 msgstr ""
 
@@ -61,7 +60,7 @@ msgid "Your session has expired. Reload the page and try again."
 msgstr ""
 
 #: src/Admin/Ajax.php:60
-#: src/Plugin.php:239
+#: src/Plugin.php:242
 msgid "Sorry, you are not allowed to do that."
 msgstr ""
 
@@ -89,7 +88,7 @@ msgid "Invalid request."
 msgstr ""
 
 #: src/Admin/Ajax.php:236
-#: src/Plugin.php:184
+#: src/Plugin.php:187
 msgid "Choose a reason."
 msgstr ""
 
@@ -119,7 +118,7 @@ msgstr ""
 
 #: src/Admin/Screens.php:124
 #: src/Admin/Screens.php:240
-#: src/Admin/Screens.php:746
+#: src/Admin/Screens.php:762
 msgid "Pages"
 msgstr ""
 
@@ -152,8 +151,8 @@ msgstr ""
 
 #: src/Admin/Screens.php:182
 #: src/Admin/Screens.php:387
-#: src/Admin/Screens.php:666
-#: src/Admin/Screens.php:730
+#: src/Admin/Screens.php:677
+#: src/Admin/Screens.php:746
 msgid "Start a scan"
 msgstr ""
 
@@ -168,7 +167,7 @@ msgstr ""
 
 #: src/Admin/Screens.php:198
 #: src/Admin/Screens.php:407
-#: src/Support/ReportBuilder.php:95
+#: src/Support/ReportBuilder.php:133
 msgid "Pages checked"
 msgstr ""
 
@@ -177,6 +176,7 @@ msgstr ""
 #: src/Admin/Screens.php:410
 #: src/Admin/Screens.php:509
 #: src/Admin/Screens.php:533
+#: src/Support/ReportBuilder.php:144
 msgid "Problems"
 msgstr ""
 
@@ -195,7 +195,8 @@ msgstr[1] ""
 #: src/Admin/Screens.php:510
 #: src/Admin/Screens.php:533
 #: src/Frontend/Frontend.php:128
-#: src/Support/ReportBuilder.php:66
+#: src/Support/ReportBuilder.php:104
+#: src/Support/ReportBuilder.php:145
 msgid "Needs review"
 msgstr ""
 
@@ -229,12 +230,12 @@ msgid "Top problems to fix"
 msgstr ""
 
 #: src/Admin/Screens.php:237
-#: src/Admin/Screens.php:790
+#: src/Admin/Screens.php:806
 msgid "Issue"
 msgstr ""
 
 #: src/Admin/Screens.php:238
-#: src/Support/ReportBuilder.php:168
+#: src/Support/ReportBuilder.php:214
 msgid "Impact"
 msgstr ""
 
@@ -283,7 +284,7 @@ msgid "Full-site scan"
 msgstr ""
 
 #: src/Admin/Screens.php:303
-#: src/Admin/Screens.php:836
+#: src/Admin/Screens.php:852
 msgid "What to check"
 msgstr ""
 
@@ -357,7 +358,7 @@ msgid "Delete all scan results"
 msgstr ""
 
 #: src/Admin/Screens.php:387
-#: src/Admin/Screens.php:666
+#: src/Admin/Screens.php:677
 msgid "No pages checked yet."
 msgstr ""
 
@@ -370,7 +371,7 @@ msgid "With problems"
 msgstr ""
 
 #: src/Admin/Screens.php:394
-#: src/Plugin.php:178
+#: src/Plugin.php:181
 msgid "Could not be checked"
 msgstr ""
 
@@ -413,7 +414,7 @@ msgstr ""
 #: src/Admin/Screens.php:483
 #: src/Admin/Screens.php:493
 #: src/Admin/Screens.php:608
-#: src/Admin/Screens.php:841
+#: src/Admin/Screens.php:857
 msgid "(opens in a new tab)"
 msgstr ""
 
@@ -456,7 +457,7 @@ msgid "Elements on this page"
 msgstr ""
 
 #: src/Admin/Screens.php:594
-#: src/Admin/Screens.php:799
+#: src/Admin/Screens.php:815
 msgid "Unknown user"
 msgstr ""
 
@@ -467,7 +468,7 @@ msgid "Dismissed: %1$s (by %2$s, %3$s ago)"
 msgstr ""
 
 #: src/Admin/Screens.php:604
-#: src/Admin/Screens.php:817
+#: src/Admin/Screens.php:833
 msgid "Restore"
 msgstr ""
 
@@ -476,81 +477,77 @@ msgid "Show on page"
 msgstr ""
 
 #. translators: %d: number of elements not listed
-#: src/Admin/Screens.php:617
+#: src/Admin/Screens.php:620
 #, php-format
-msgid "%d more elements are not listed. Fix the ones above and check again."
-msgstr ""
+msgid "%d more element is not listed. Fix the ones above and check again."
+msgid_plural "%d more elements are not listed. Fix the ones above and check again."
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/Admin/Screens.php:632
+#: src/Admin/Screens.php:643
 msgid "Ignore this issue on every page…"
 msgstr ""
 
-#: src/Admin/Screens.php:632
+#: src/Admin/Screens.php:643
 msgid "Dismiss…"
 msgstr ""
 
-#: src/Admin/Screens.php:637
-#: src/Admin/Screens.php:790
+#: src/Admin/Screens.php:648
+#: src/Admin/Screens.php:806
 msgid "Reason"
 msgstr ""
 
-#: src/Admin/Screens.php:638
+#: src/Admin/Screens.php:649
 msgid "Choose…"
 msgstr ""
 
-#: src/Admin/Screens.php:644
-#: src/Admin/Screens.php:790
+#: src/Admin/Screens.php:655
+#: src/Admin/Screens.php:806
 msgid "Where"
 msgstr ""
 
-#: src/Admin/Screens.php:645
+#: src/Admin/Screens.php:656
 msgid "Only on this page"
 msgstr ""
 
-#: src/Admin/Screens.php:646
+#: src/Admin/Screens.php:657
 msgid "On every page (for headers, footers and other shared parts)"
 msgstr ""
 
-#: src/Admin/Screens.php:651
+#: src/Admin/Screens.php:662
 msgid "Note (optional)"
 msgstr ""
 
-#: src/Admin/Screens.php:653
+#: src/Admin/Screens.php:664
 msgid "Dismiss"
 msgstr ""
 
-#: src/Admin/Screens.php:668
+#: src/Admin/Screens.php:679
 msgid "No open issues on the pages checked."
 msgstr ""
 
-#: src/Admin/Screens.php:673
+#: src/Admin/Screens.php:684
 msgid "Each issue type is listed once with the pages it affects. Fixing a theme or plugin template often fixes many pages at once."
 msgstr ""
 
 #. translators: %d: number of issue types
-#: src/Admin/Screens.php:689
+#: src/Admin/Screens.php:700
 #, php-format
 msgid "Problems (%d)"
 msgstr ""
 
 #. translators: %d: number of issue types
-#: src/Admin/Screens.php:689
+#: src/Admin/Screens.php:700
 #, php-format
 msgid "Needs review (%d)"
 msgstr ""
 
-#. translators: 1: elements, 2: pages
-#: src/Admin/Screens.php:700
-#, php-format
-msgid "%1$s elements on %2$s pages"
-msgstr ""
-
-#: src/Admin/Screens.php:704
+#: src/Admin/Screens.php:714
 msgid "Affected pages"
 msgstr ""
 
 #. translators: %d: number of elements
-#: src/Admin/Screens.php:708
+#: src/Admin/Screens.php:718
 #, php-format
 msgid "(%d element)"
 msgid_plural "(%d elements)"
@@ -558,105 +555,107 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %d: number of pages
-#: src/Admin/Screens.php:713
+#: src/Admin/Screens.php:726
 #, php-format
-msgid "…and %d more. The Pages tab lists them all."
-msgstr ""
+msgid "…and %d more page. The Pages tab lists them all."
+msgid_plural "…and %d more pages. The Pages tab lists them all."
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/Admin/Screens.php:730
+#: src/Admin/Screens.php:746
 msgid "Run a scan first; the report is built from its results."
 msgstr ""
 
-#: src/Admin/Screens.php:737
+#: src/Admin/Screens.php:753
 msgid "Results mapped to WCAG 2.2 Level AA and EN 301 549 (the European standard used for the European Accessibility Act and the Web Accessibility Directive). Share it with your developer or keep it as evidence of ongoing work."
 msgstr ""
 
-#: src/Admin/Screens.php:739
-#: src/Admin/Screens.php:740
+#: src/Admin/Screens.php:755
+#: src/Admin/Screens.php:756
 msgid "WCAG 2.2 AA at a glance"
 msgstr ""
 
-#: src/Admin/Screens.php:742
+#: src/Admin/Screens.php:758
 msgid "Success criterion"
 msgstr ""
 
-#: src/Admin/Screens.php:743
-#: src/Support/ReportBuilder.php:130
+#: src/Admin/Screens.php:759
+#: src/Support/ReportBuilder.php:176
 msgid "Level"
 msgstr ""
 
-#: src/Admin/Screens.php:745
-#: src/Support/ReportBuilder.php:130
+#: src/Admin/Screens.php:761
+#: src/Support/ReportBuilder.php:176
 msgid "Result"
 msgstr ""
 
-#: src/Admin/Screens.php:753
-#: src/Support/ReportBuilder.php:139
+#: src/Admin/Screens.php:769
+#: src/Support/ReportBuilder.php:185
 msgid "WCAG 2.2 only"
 msgstr ""
 
-#: src/Admin/Screens.php:763
+#: src/Admin/Screens.php:779
 msgid "Full report"
 msgstr ""
 
-#: src/Admin/Screens.php:770
+#: src/Admin/Screens.php:786
 msgid "Need a full audit?"
 msgstr ""
 
-#: src/Admin/Screens.php:771
+#: src/Admin/Screens.php:787
 msgid "A manual audit covers what automated tools cannot: keyboard use, screen readers, captions and forms. iWorks can audit, fix and write your accessibility statement."
 msgstr ""
 
-#: src/Admin/Screens.php:772
+#: src/Admin/Screens.php:788
 msgid "Talk to iWorks →"
 msgstr ""
 
-#: src/Admin/Screens.php:783
+#: src/Admin/Screens.php:799
 msgid "Nothing dismissed. When you mark an issue as not a problem, it is listed here with the reason, who did it and when, so the decision can be reviewed later."
 msgstr ""
 
-#: src/Admin/Screens.php:788
+#: src/Admin/Screens.php:804
 msgid "Dismissed items"
 msgstr ""
 
-#: src/Admin/Screens.php:790
+#: src/Admin/Screens.php:806
 msgid "Element"
 msgstr ""
 
-#: src/Admin/Screens.php:790
+#: src/Admin/Screens.php:806
 msgid "By"
 msgstr ""
 
-#: src/Admin/Screens.php:790
+#: src/Admin/Screens.php:806
 msgid "When"
 msgstr ""
 
-#: src/Admin/Screens.php:791
+#: src/Admin/Screens.php:807
 msgid "Actions"
 msgstr ""
 
-#: src/Admin/Screens.php:801
+#: src/Admin/Screens.php:817
 msgid "Every page"
 msgstr ""
 
-#: src/Admin/Screens.php:804
+#: src/Admin/Screens.php:820
 msgid "(page no longer in results)"
 msgstr ""
 
-#: src/Admin/Screens.php:808
+#: src/Admin/Screens.php:824
 msgid "All elements"
 msgstr ""
 
-#: src/Admin/Screens.php:841
+#: src/Admin/Screens.php:857
 msgid "Technical guidance (Deque University)"
 msgstr ""
 
-#: src/Admin/Screens.php:856
+#: src/Admin/Screens.php:872
 msgid "Best practice"
 msgstr ""
 
 #. translators: %s: human time difference
-#: src/Admin/Screens.php:993
+#: src/Admin/Screens.php:1009
 #, php-format
 msgid "%s ago"
 msgstr ""
@@ -720,7 +719,7 @@ msgid "Highlights come from the last scan. Rescan after making changes."
 msgstr ""
 
 #: src/Frontend/Frontend.php:167
-#: src/Plugin.php:227
+#: src/Plugin.php:230
 msgid "Check accessibility"
 msgstr ""
 
@@ -741,59 +740,65 @@ msgstr ""
 msgid "Accessibility"
 msgstr ""
 
-#: src/Plugin.php:167
+#: src/Plugin.php:168
 msgid "Collecting pages to check…"
 msgstr ""
 
 #. translators: 1: current page number, 2: total pages, 3: page title
-#: src/Plugin.php:169
+#: src/Plugin.php:170
 #, php-format
 msgid "Checking %1$d of %2$d: %3$s"
 msgstr ""
 
 #. translators: %s: page title
-#: src/Plugin.php:171
+#: src/Plugin.php:172
 #, php-format
 msgid "Checking %s…"
 msgstr ""
 
 #. translators: %d: number of pages
-#: src/Plugin.php:173
+#: src/Plugin.php:174
+#, php-format
+msgid "Finished. %d page checked."
+msgstr ""
+
+#. translators: %d: number of pages
+#: src/Plugin.php:176
 #, php-format
 msgid "Finished. %d pages checked."
 msgstr ""
 
-#: src/Plugin.php:174
+#: src/Plugin.php:177
 msgid "Finished."
 msgstr ""
 
-#: src/Plugin.php:175
+#: src/Plugin.php:178
 msgid "Stopped. Results so far are saved and you can resume later."
 msgstr ""
 
 #. translators: 1: number of problem elements, 2: number of needs-review items
-#: src/Plugin.php:177
+#: src/Plugin.php:180
 #, php-format
 msgid "Problems: %1$d · Needs review: %2$d"
 msgstr ""
 
-#: src/Plugin.php:179
+#: src/Plugin.php:182
 msgid "View details"
 msgstr ""
 
-#: src/Plugin.php:180
+#: src/Plugin.php:183
 msgid "Something went wrong. Please reload the page and try again."
 msgstr ""
 
-#: src/Plugin.php:181
+#: src/Plugin.php:184
 msgid "A scan is running. Leaving this page will pause it."
 msgstr ""
 
-#: src/Plugin.php:182
+#: src/Plugin.php:185
 msgid "Delete all scan results? Dismissed items are kept."
 msgstr ""
 
-#: src/Plugin.php:183
+#: src/Plugin.php:186
 msgid "Working…"
 msgstr ""
 
@@ -854,175 +859,179 @@ msgstr ""
 msgid "Page not found (404)"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:64
+#. translators: 1: number of elements, 2: number of rules. %3$s is a translated label such as "Problems".
+#: src/Support/ReportBuilder.php:68
+#, php-format
+msgid "%3$s: %1$d element across %2$d types of issue"
+msgid_plural "%3$s: %1$d elements across %2$d types of issue"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of elements, 2: number of pages
+#: src/Support/ReportBuilder.php:87
+#, php-format
+msgid "%1$s element on %2$s pages"
+msgid_plural "%1$s elements on %2$s pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Support/ReportBuilder.php:102
 msgid "Fails"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:68
+#: src/Support/ReportBuilder.php:106
 msgid "No automated failures"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:70
+#: src/Support/ReportBuilder.php:108
 msgid "Manual check needed"
 msgstr ""
 
 #. translators: %s: site name
-#: src/Support/ReportBuilder.php:88
+#: src/Support/ReportBuilder.php:126
 #, php-format
 msgid "Accessibility report: %s"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:90
+#: src/Support/ReportBuilder.php:128
 msgid "Site"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:91
+#: src/Support/ReportBuilder.php:129
 msgid "Report date"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:93
+#: src/Support/ReportBuilder.php:131
 msgid "Last page checked"
 msgstr ""
 
 #. translators: %d: number of pages
-#: src/Support/ReportBuilder.php:95
+#: src/Support/ReportBuilder.php:135
 #, php-format
 msgid "%d could not be checked"
-msgstr ""
+msgid_plural "%d could not be checked"
+msgstr[0] ""
+msgstr[1] ""
 
-#. translators: %d: number of pages
-#: src/Support/ReportBuilder.php:96
+#: src/Support/ReportBuilder.php:138
 msgid "Standard"
 msgstr ""
 
-#. translators: %d: number of pages
-#: src/Support/ReportBuilder.php:96
+#: src/Support/ReportBuilder.php:138
 msgid "clause 9 (web content)"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:97
+#: src/Support/ReportBuilder.php:139
 msgid "Tool"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:100
+#: src/Support/ReportBuilder.php:142
 msgid "Summary"
 msgstr ""
 
-#. translators: 1: number of elements, 2: number of rules
-#: src/Support/ReportBuilder.php:103
-#, php-format
-msgid "Problems: %1$d elements across %2$d types of issue"
-msgstr ""
-
-#. translators: 1: number of elements, 2: number of rules
-#: src/Support/ReportBuilder.php:105
-#, php-format
-msgid "Needs review: %1$d elements across %2$d types of issue"
-msgstr ""
-
 #. translators: 1: pages without problems, 2: pages checked
-#: src/Support/ReportBuilder.php:107
+#: src/Support/ReportBuilder.php:147
 #, php-format
 msgid "Pages with no automated problems: %1$d of %2$d"
 msgstr ""
 
 #. translators: %d: number of success criteria
-#: src/Support/ReportBuilder.php:115
+#: src/Support/ReportBuilder.php:156
 #, php-format
-msgid "WCAG 2.2 AA success criteria with automated failures: %d"
-msgstr ""
+msgid "WCAG 2.2 AA success criterion with automated failures: %d"
+msgid_plural "WCAG 2.2 AA success criteria with automated failures: %d"
+msgstr[0] ""
+msgstr[1] ""
 
 #. translators: %d: number of dismissed items
-#: src/Support/ReportBuilder.php:119
+#: src/Support/ReportBuilder.php:163
 #, php-format
-msgid "Items dismissed by a person (with reasons, listed in the plugin): %d"
-msgstr ""
+msgid "Item dismissed by a person (with reasons, listed in the plugin): %d"
+msgid_plural "Items dismissed by a person (with reasons, listed in the plugin): %d"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/Support/ReportBuilder.php:123
+#: src/Support/ReportBuilder.php:169
 msgid "What this report can and cannot tell you"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:125
+#: src/Support/ReportBuilder.php:171
 msgid "Automated testing finds roughly a third of accessibility problems. It is reliable for things like missing alternative text, low colour contrast, missing form labels and broken ARIA, but it cannot judge whether alt text is meaningful, whether the site works with a keyboard alone, or whether videos have accurate captions. \"No automated failures\" is not the same as \"conforms\". A full conformance claim under the European Accessibility Act needs a manual audit by a person."
 msgstr ""
 
-#: src/Support/ReportBuilder.php:128
+#: src/Support/ReportBuilder.php:174
 msgid "Results by WCAG 2.2 success criterion"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:130
+#: src/Support/ReportBuilder.php:176
 msgid "Criterion"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:130
+#: src/Support/ReportBuilder.php:176
 msgid "Pages affected"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:159
+#: src/Support/ReportBuilder.php:205
 msgid "Problems found"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:159
+#: src/Support/ReportBuilder.php:205
 msgid "Needs review by a person"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:169
+#: src/Support/ReportBuilder.php:215
 msgid "Best practice (not a WCAG requirement)"
 msgstr ""
 
-#. translators: 1: number of elements, 2: number of pages
-#: src/Support/ReportBuilder.php:171
-#, php-format
-msgid "%1$d elements on %2$d pages"
-msgstr ""
-
-#: src/Support/ReportBuilder.php:172
+#: src/Support/ReportBuilder.php:217
 msgid "Rule"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:176
+#: src/Support/ReportBuilder.php:221
 msgid "Why it matters"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:179
+#: src/Support/ReportBuilder.php:224
 msgid "How to fix"
 msgstr ""
 
 #. translators: %d: number of further pages
-#: src/Support/ReportBuilder.php:187
+#: src/Support/ReportBuilder.php:234
 #, php-format
-msgid "…and %d more pages"
-msgstr ""
+msgid "…and %d more page"
+msgid_plural "…and %d more pages"
+msgstr[0] ""
+msgstr[1] ""
 
-#: src/Support/ReportBuilder.php:194
+#: src/Support/ReportBuilder.php:243
 msgid "Pages that could not be checked"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:210
+#: src/Support/ReportBuilder.php:259
 msgid "Manual checks to do next"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:212
+#: src/Support/ReportBuilder.php:261
 msgid "Use the site with only a keyboard (Tab, Shift+Tab, Enter, Space, Esc). Can you reach and use every link, menu, form and pop-up, and always see where focus is?"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:213
+#: src/Support/ReportBuilder.php:262
 msgid "Zoom the browser to 200% and 400%. Does everything still fit and work without scrolling sideways?"
 msgstr ""
 
-#: src/Support/ReportBuilder.php:214
+#: src/Support/ReportBuilder.php:263
 msgid "Try a screen reader (VoiceOver on Mac/iPhone, NVDA on Windows, TalkBack on Android) on your key pages and forms."
 msgstr ""
 
-#: src/Support/ReportBuilder.php:215
+#: src/Support/ReportBuilder.php:264
 msgid "Check that alt text is meaningful, videos have accurate captions, and form errors are explained in text."
 msgstr ""
 
-#: src/Support/ReportBuilder.php:216
+#: src/Support/ReportBuilder.php:265
 msgid "Publish an accessibility statement with a way for visitors to report problems (required for public sector sites and expected under the European Accessibility Act)."
 msgstr ""
 
-#: src/Support/ReportBuilder.php:218
+#: src/Support/ReportBuilder.php:267
 msgid "Need a full manual audit, fixes or an accessibility statement? iWorks can help: https://www.iworks.ie"
 msgstr ""
 

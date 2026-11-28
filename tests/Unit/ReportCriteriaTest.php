@@ -7,6 +7,7 @@
 
 namespace IWorksIE\AccessibilityChecker\Tests\Unit;
 
+use Brain\Monkey\Functions;
 use IWorksIE\AccessibilityChecker\Support\ReportBuilder;
 use IWorksIE\AccessibilityChecker\Support\RuleGuide;
 
@@ -60,6 +61,27 @@ final class ReportCriteriaTest extends TestCase {
 			}
 		);
 		$this->assertCount( 2, $fails );
+	}
+
+	public function test_nodes_across_rules_line_singular_and_plural() {
+		$this->assertSame(
+			'Problems: 1 element across 1 types of issue',
+			ReportBuilder::nodes_across_rules_line( 'Problems', 1, 1 )
+		);
+		$this->assertSame(
+			'Problems: 3 elements across 2 types of issue',
+			ReportBuilder::nodes_across_rules_line( 'Problems', 3, 2 )
+		);
+	}
+
+	public function test_elements_on_pages_line_singular_and_plural() {
+		Functions\when( 'number_format_i18n' )->alias(
+			static function ( $n ) {
+				return (string) $n;
+			}
+		);
+		$this->assertSame( '1 element on 1 pages', ReportBuilder::elements_on_pages_line( 1, 1 ) );
+		$this->assertSame( '4 elements on 2 pages', ReportBuilder::elements_on_pages_line( 4, 2 ) );
 	}
 
 	public function test_rule_guide_known_and_fallback() {

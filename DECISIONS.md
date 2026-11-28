@@ -25,3 +25,7 @@ Choices made while building v1.0.0 without asking (Cormac asked for best judgeme
 | WP-CLI | None | The engine needs a browser. |
 | Error codes | Browser sends a code (`timeout`, `frame_blocked`, `other_site`, `script_blocked`, `axe_error`), PHP maps it to translated text | No free text from the browser stored as messages. |
 | install-wp-tests tag matching | Resolves X.Y to the latest X.Y.Z and checks out matching `tags/X.Y.Z` tests (not trunk) | WP 6.5 integration (single + multisite) failed because trunk's mock-mailer needs `class-wp-phpmailer.php` absent from 6.5. |
+
+### 2026-11-28 plurals / final pass
+- Plural forms for report/issues/scan-finished strings; helpers + unit tests for count-of-1. `wp-i18n` for JS.
+
