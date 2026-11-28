@@ -1,0 +1,307 @@
+/* iWorks.ie Accessibility Checker admin styles (builds on iwt-core.css). */
+.iwieac-intro {
+	max-width: 760px;
+}
+.iwieac-overview {
+	display: flex;
+	gap: 16px;
+	align-items: stretch;
+	margin: 0 0 12px;
+}
+.iwieac-overview .iwt-stat-tiles {
+	flex: 1;
+	margin: 0;
+}
+.iwieac-score {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 140px;
+	padding: 12px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-top: 4px solid #8c8f94;
+}
+.iwieac-score__value {
+	font-size: 2.4rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+.iwieac-score__label {
+	color: #50575e;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-weight: 600;
+}
+.iwieac-score--good { border-top-color: #00a32a; }
+.iwieac-score--recommended { border-top-color: #dba617; }
+.iwieac-score--critical { border-top-color: #d63638; }
+.iwieac-score-pill {
+	display: inline-block;
+	min-width: 2.2em;
+	padding: 1px 6px;
+	border-radius: 10px;
+	border: 2px solid #8c8f94;
+	text-align: center;
+	font-weight: 600;
+}
+.iwieac-score-pill.iwieac-score--good { border-color: #00a32a; }
+.iwieac-score-pill.iwieac-score--recommended { border-color: #dba617; }
+.iwieac-score-pill.iwieac-score--critical { border-color: #d63638; }
+.iwieac-tile-sub {
+	margin: 4px 0 0;
+	color: #50575e;
+}
+.iwieac-meta,
+.iwieac-url {
+	color: #50575e;
+}
+.iwieac-url {
+	word-break: break-all;
+}
+.iwieac-error {
+	color: #b32d2e;
+}
+.iwieac-table .num {
+	text-align: right;
+	white-space: nowrap;
+}
+.iwieac-sortable a {
+	color: inherit;
+	text-decoration: none;
+}
+.iwieac-sortable a:hover,
+.iwieac-sortable a:focus {
+	text-decoration: underline;
+}
+.iwieac-sort {
+	margin-left: 4px;
+	font-size: 10px;
+}
+.iwieac-impact {
+	display: inline-block;
+	padding: 1px 8px;
+	border-radius: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 1.6;
+	border: 1px solid transparent;
+	white-space: nowrap;
+}
+.iwieac-impact--critical { background: #fcf0f1; color: #8a2424; border-color: #d63638; }
+.iwieac-impact--serious { background: #fcf0f1; color: #8a2424; border-color: #e65054; }
+.iwieac-impact--moderate { background: #fcf9e8; color: #6b4e00; border-color: #dba617; }
+.iwieac-impact--minor,
+.iwieac-impact--unknown { background: #f0f6fc; color: #135e96; border-color: #72aee6; }
+.iwieac-count {
+	color: #50575e;
+	font-size: 13px;
+	white-space: nowrap;
+}
+.iwieac-tech {
+	color: #50575e;
+	font-size: 13px;
+}
+.iwieac-nodes {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.iwieac-node {
+	margin: 0 0 12px;
+	padding: 10px 12px;
+	background: #f6f7f7;
+	border-left: 3px solid #d63638;
+}
+.iwieac-node.is-dismissed {
+	border-left-color: #8c8f94;
+}
+.iwieac-node p {
+	margin: 0 0 6px;
+}
+.iwieac-node__target code {
+	word-break: break-all;
+}
+.iwieac-node__html {
+	margin: 0 0 6px;
+	padding: 6px 8px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	white-space: pre-wrap;
+	word-break: break-all;
+	font-size: 12px;
+	max-height: 8em;
+	overflow: auto;
+}
+.iwieac-node__summary {
+	color: #3c434a;
+}
+.iwieac-dismiss summary {
+	cursor: pointer;
+	color: #2271b1;
+	display: inline-block;
+	padding: 2px 0;
+}
+.iwieac-dismiss summary:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+.iwieac-dismiss__form {
+	margin-top: 8px;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+}
+.iwieac-dismiss__form fieldset {
+	margin: 0 0 8px;
+}
+.iwieac-dismiss__form legend {
+	font-weight: 600;
+}
+.iwieac-scan-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 16px;
+	margin: 0 0 16px;
+}
+.iwieac-panel {
+	padding: 4px 16px 12px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+}
+.iwieac-panel fieldset legend {
+	font-weight: 600;
+	margin-bottom: 6px;
+}
+.iwieac-check {
+	display: block;
+	margin: 0 0 6px;
+}
+.iwieac-run {
+	margin: 0 0 16px;
+	padding: 12px 16px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+}
+.iwieac-run__body {
+	display: flex;
+	gap: 16px;
+	align-items: flex-start;
+}
+.iwieac-stage {
+	position: relative;
+	flex: 0 0 320px;
+	width: 320px;
+	height: 225px;
+	overflow: hidden;
+	background: #f0f0f1;
+	border: 1px solid #dcdcde;
+}
+.iwieac-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1280px;
+	height: 900px;
+	border: 0;
+	background: #fff;
+	transform: scale(0.25);
+	transform-origin: 0 0;
+	pointer-events: none;
+}
+.iwieac-frame--offscreen {
+	position: fixed;
+	left: -20000px;
+	top: 0;
+	transform: none;
+}
+.iwieac-log {
+	flex: 1;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	max-height: 225px;
+	overflow: auto;
+}
+.iwieac-log li {
+	margin: 0;
+	padding: 4px 0 4px 10px;
+	border-left: 3px solid #8c8f94;
+	border-bottom: 1px solid #f0f0f1;
+}
+.iwieac-log li.has-problems { border-left-color: #d63638; }
+.iwieac-log li.is-clean { border-left-color: #00a32a; }
+.iwieac-log li.has-error { border-left-color: #dba617; }
+.iwieac-log__meta {
+	color: #50575e;
+}
+.iwieac-clear {
+	margin-top: 24px;
+}
+.iwieac-page-head h2 {
+	margin-bottom: 4px;
+}
+.iwieac-affected {
+	margin-left: 1.2em;
+	list-style: disc;
+}
+.iwieac-sc {
+	font-weight: 600;
+}
+.iwieac-sc--fail { color: #b32d2e; }
+.iwieac-sc--review { color: #996800; }
+.iwieac-sc--pass { color: #007017; }
+.iwieac-sc--manual { color: #50575e; font-weight: 400; }
+.iwieac-about,
+.iwieac-cta {
+	margin-top: 24px;
+	padding: 4px 16px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left: 4px solid #2271b1;
+	max-width: 900px;
+}
+.iwieac-about ul {
+	list-style: disc;
+	margin-left: 1.2em;
+}
+.iwieac-pagination {
+	margin: 12px 0;
+}
+.iwieac-pagination .page-numbers {
+	display: inline-block;
+	padding: 4px 8px;
+}
+@media screen and (max-width: 960px) {
+	.iwieac-scan-grid {
+		grid-template-columns: 1fr;
+	}
+	.iwieac-overview,
+	.iwieac-run__body {
+		flex-direction: column;
+	}
+	.iwieac-stage {
+		flex-basis: auto;
+	}
+}
+.iwieac-table-wrap {
+	max-width: 100%;
+	overflow-x: auto;
+	margin: 0 0 12px;
+}
+.iwieac-table-wrap:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+.iwieac-table-wrap > table {
+	margin: 0;
+}
+.iwieac-clear .button-link-delete {
+	color: #b32d2e;
+}
+/* WordPress's .button display rule would otherwise override the hidden attribute. */
+.iwt-page [hidden] {
+	display: none !important;
+}

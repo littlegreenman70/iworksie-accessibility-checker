@@ -1,0 +1,1876 @@
+# Copyright (C) 2026 iWorks.ie
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: iWorks.ie Accessibility Checker 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/iworksie-accessibility-checker\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-28T17:50:28+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: iworksie-accessibility-checker\n"
+
+#. Plugin Name of the plugin
+#: iworksie-accessibility-checker.php
+msgid "iWorks.ie Accessibility Checker"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: iworksie-accessibility-checker.php
+msgid "https://www.iworks.ie"
+msgstr ""
+
+#. Description of the plugin
+#: iworksie-accessibility-checker.php
+msgid "Free full-site accessibility checker built on axe-core. Plain-English fixes and a WCAG 2.2 AA / EN 301 549 report. No overlay, no upsells, nothing sent to third parties."
+msgstr ""
+
+#. Author of the plugin
+#: iworksie-accessibility-checker.php
+msgid "iWorks.ie"
+msgstr ""
+
+#. translators: 1: required PHP version, 2: current PHP version
+#: iworksie-accessibility-checker.php:47
+#, php-format
+msgid "iWorks.ie Accessibility Checker requires PHP %1$s or higher. This site is running PHP %2$s."
+msgstr ""
+
+#. translators: 1: required WordPress version, 2: current WordPress version
+#: iworksie-accessibility-checker.php:60
+#, php-format
+msgid "iWorks.ie Accessibility Checker requires WordPress %1$s or higher. This site is running WordPress %2$s."
+msgstr ""
+
+#: iworksie-accessibility-checker.php:71
+msgid "iWorks.ie Accessibility Checker is missing its vendor-prefixed library. Run composer install, or install the release zip from wordpress.org."
+msgstr ""
+
+#: iworksie-accessibility-checker.php:103
+msgid "iWorks.ie Accessibility Checker could not load its shared tools library."
+msgstr ""
+
+#: src/Admin/Ajax.php:57
+msgid "Your session has expired. Reload the page and try again."
+msgstr ""
+
+#: src/Admin/Ajax.php:60
+#: src/Plugin.php:242
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: src/Admin/Ajax.php:110
+msgid "Nothing to scan. Choose at least one kind of content."
+msgstr ""
+
+#. translators: %s: site address
+#: src/Admin/Ajax.php:148
+#, php-format
+msgid "Enter the address of a page on this site (%s)."
+msgstr ""
+
+#: src/Admin/Ajax.php:164
+msgid "Invalid page address."
+msgstr ""
+
+#: src/Admin/Ajax.php:195
+msgid "The result could not be saved."
+msgstr ""
+
+#: src/Admin/Ajax.php:226
+#: src/Admin/Ajax.php:231
+msgid "Invalid request."
+msgstr ""
+
+#: src/Admin/Ajax.php:236
+#: src/Plugin.php:187
+msgid "Choose a reason."
+msgstr ""
+
+#: src/Admin/Ajax.php:239
+msgid "Dismissed."
+msgstr ""
+
+#: src/Admin/Ajax.php:251
+msgid "That item was already restored."
+msgstr ""
+
+#: src/Admin/Ajax.php:254
+msgid "Restored."
+msgstr ""
+
+#: src/Admin/Screens.php:117
+msgid "Sorry, you are not allowed to access this page."
+msgstr ""
+
+#: src/Admin/Screens.php:122
+msgid "Overview"
+msgstr ""
+
+#: src/Admin/Screens.php:123
+msgid "Scan"
+msgstr ""
+
+#: src/Admin/Screens.php:124
+#: src/Admin/Screens.php:240
+#: src/Admin/Screens.php:762
+msgid "Pages"
+msgstr ""
+
+#: src/Admin/Screens.php:125
+msgid "Issues"
+msgstr ""
+
+#: src/Admin/Screens.php:126
+msgid "Report"
+msgstr ""
+
+#. translators: %d: number of dismissed items
+#: src/Admin/Screens.php:128
+#, php-format
+msgid "Dismissed (%d)"
+msgstr ""
+
+#. translators: %d: number of dismissed items
+#: src/Admin/Screens.php:128
+msgid "Dismissed"
+msgstr ""
+
+#: src/Admin/Screens.php:180
+msgid "Check your whole site for accessibility problems"
+msgstr ""
+
+#: src/Admin/Screens.php:181
+msgid "The scan opens each page in your browser and tests it with axe-core, the engine used by accessibility professionals. Every post type, every page, free. Nothing is sent to any third party."
+msgstr ""
+
+#: src/Admin/Screens.php:182
+#: src/Admin/Screens.php:387
+#: src/Admin/Screens.php:677
+#: src/Admin/Screens.php:746
+msgid "Start a scan"
+msgstr ""
+
+#: src/Admin/Screens.php:189
+msgid "A full-site scan was not finished. Open the Scan tab to resume it."
+msgstr ""
+
+#: src/Admin/Screens.php:195
+#: src/Admin/Screens.php:512
+msgid "Automated score"
+msgstr ""
+
+#: src/Admin/Screens.php:198
+#: src/Admin/Screens.php:407
+#: src/Support/ReportBuilder.php:133
+msgid "Pages checked"
+msgstr ""
+
+#. translators: %d: number of issue types
+#: src/Admin/Screens.php:200
+#: src/Admin/Screens.php:410
+#: src/Admin/Screens.php:509
+#: src/Admin/Screens.php:533
+#: src/Support/ReportBuilder.php:144
+msgid "Problems"
+msgstr ""
+
+#. translators: %d: number of issue types
+#: src/Admin/Screens.php:200
+#: src/Admin/Screens.php:202
+#, php-format
+msgid "%d type of issue"
+msgid_plural "%d types of issue"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of issue types
+#: src/Admin/Screens.php:202
+#: src/Admin/Screens.php:411
+#: src/Admin/Screens.php:510
+#: src/Admin/Screens.php:533
+#: src/Frontend/Frontend.php:128
+#: src/Support/ReportBuilder.php:104
+#: src/Support/ReportBuilder.php:145
+msgid "Needs review"
+msgstr ""
+
+#. translators: 1: pages with no problems, 2: pages checked
+#: src/Admin/Screens.php:207
+#, php-format
+msgid "%1$s of %2$s pages have no automated problems."
+msgstr ""
+
+#. translators: %s: time ago, e.g. "5 minutes"
+#: src/Admin/Screens.php:210
+#, php-format
+msgid "Last page checked %s ago."
+msgstr ""
+
+#. translators: %s: number of pages
+#: src/Admin/Screens.php:214
+#, php-format
+msgid "%s page could not be checked."
+msgid_plural "%s pages could not be checked."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens.php:232
+msgid "No automated problems found on the pages checked. Remember that automated tests find only part of the picture; see the Report tab for the manual checks to do next."
+msgstr ""
+
+#: src/Admin/Screens.php:234
+#: src/Admin/Screens.php:235
+msgid "Top problems to fix"
+msgstr ""
+
+#: src/Admin/Screens.php:237
+#: src/Admin/Screens.php:806
+msgid "Issue"
+msgstr ""
+
+#: src/Admin/Screens.php:238
+#: src/Support/ReportBuilder.php:214
+msgid "Impact"
+msgstr ""
+
+#: src/Admin/Screens.php:241
+msgid "Elements"
+msgstr ""
+
+#: src/Admin/Screens.php:258
+msgid "Scan again"
+msgstr ""
+
+#: src/Admin/Screens.php:259
+msgid "Get the report"
+msgstr ""
+
+#: src/Admin/Screens.php:270
+msgid "How this checker works"
+msgstr ""
+
+#: src/Admin/Screens.php:272
+msgid "It tests the real rendered pages, including your theme, plugins and JavaScript, against WCAG 2.2 Level AA."
+msgstr ""
+
+#: src/Admin/Screens.php:273
+msgid "Problems are definite failures. \"Needs review\" items could not be decided automatically and need a person to look."
+msgstr ""
+
+#: src/Admin/Screens.php:274
+msgid "It never changes your site and never adds an \"accessibility overlay\" widget. Overlays do not make a site compliant; fixing the issues does."
+msgstr ""
+
+#: src/Admin/Screens.php:275
+msgid "Automated tests find roughly a third of accessibility problems. Use the report's manual checklist for the rest."
+msgstr ""
+
+#: src/Admin/Screens.php:293
+msgid "All scan results were deleted."
+msgstr ""
+
+#: src/Admin/Screens.php:296
+msgid "Scanning happens in this browser tab: each page is opened out of sight and tested with axe-core. Keep the tab open until it finishes. If you leave, you can resume later."
+msgstr ""
+
+#: src/Admin/Screens.php:302
+msgid "Full-site scan"
+msgstr ""
+
+#: src/Admin/Screens.php:303
+#: src/Admin/Screens.php:852
+msgid "What to check"
+msgstr ""
+
+#: src/Admin/Screens.php:304
+msgid "Home page (and blog page)"
+msgstr ""
+
+#: src/Admin/Screens.php:305
+msgid "One of each template: archives, categories, author, search results, 404 page"
+msgstr ""
+
+#. translators: 1: post type name, 2: number published
+#: src/Admin/Screens.php:308
+#, php-format
+msgid "%1$s (%2$s published)"
+msgstr ""
+
+#: src/Admin/Screens.php:311
+msgid "Maximum pages"
+msgstr ""
+
+#: src/Admin/Screens.php:313
+msgid "Newest content first. Each page takes a few seconds."
+msgstr ""
+
+#: src/Admin/Screens.php:314
+msgid "Include best-practice checks (useful, but not WCAG requirements)"
+msgstr ""
+
+#: src/Admin/Screens.php:316
+msgid "Start full scan"
+msgstr ""
+
+#. translators: 1: pages done, 2: total pages
+#: src/Admin/Screens.php:320
+#, php-format
+msgid "Resume (%1$d of %2$d done)"
+msgstr ""
+
+#: src/Admin/Screens.php:325
+msgid "Stop"
+msgstr ""
+
+#: src/Admin/Screens.php:331
+msgid "Check one page"
+msgstr ""
+
+#: src/Admin/Screens.php:332
+msgid "Page address"
+msgstr ""
+
+#: src/Admin/Screens.php:334
+msgid "Check page"
+msgstr ""
+
+#: src/Admin/Screens.php:335
+msgid "Tip: every post and page also has a \"Check accessibility\" link in its row actions and in the admin bar when you view it."
+msgstr ""
+
+#: src/Admin/Screens.php:343
+#: src/Admin/Screens.php:498
+msgid "Scan progress"
+msgstr ""
+
+#: src/Admin/Screens.php:350
+msgid "Pages checked in this run"
+msgstr ""
+
+#: src/Admin/Screens.php:358
+msgid "Delete all scan results"
+msgstr ""
+
+#: src/Admin/Screens.php:387
+#: src/Admin/Screens.php:677
+msgid "No pages checked yet."
+msgstr ""
+
+#: src/Admin/Screens.php:392
+msgid "All"
+msgstr ""
+
+#: src/Admin/Screens.php:393
+msgid "With problems"
+msgstr ""
+
+#: src/Admin/Screens.php:394
+#: src/Plugin.php:181
+msgid "Could not be checked"
+msgstr ""
+
+#: src/Admin/Screens.php:409
+msgid "Page"
+msgstr ""
+
+#: src/Admin/Screens.php:412
+msgid "Score"
+msgstr ""
+
+#: src/Admin/Screens.php:413
+msgid "Checked"
+msgstr ""
+
+#: src/Admin/Screens.php:416
+msgid "No pages match this filter."
+msgstr ""
+
+#: src/Admin/Screens.php:457
+msgid "« Previous"
+msgstr ""
+
+#: src/Admin/Screens.php:458
+msgid "Next »"
+msgstr ""
+
+#: src/Admin/Screens.php:462
+msgid "Pages list navigation"
+msgstr ""
+
+#: src/Admin/Screens.php:475
+msgid "← All pages"
+msgstr ""
+
+#: src/Admin/Screens.php:477
+msgid "That page is not in the results any more. It may have been cleared."
+msgstr ""
+
+#: src/Admin/Screens.php:483
+#: src/Admin/Screens.php:493
+#: src/Admin/Screens.php:608
+#: src/Admin/Screens.php:857
+msgid "(opens in a new tab)"
+msgstr ""
+
+#. translators: %s: time ago
+#: src/Admin/Screens.php:485
+#, php-format
+msgid "Checked %s"
+msgstr ""
+
+#: src/Admin/Screens.php:491
+msgid "Check again"
+msgstr ""
+
+#: src/Admin/Screens.php:493
+msgid "Show issues on the page"
+msgstr ""
+
+#: src/Admin/Screens.php:516
+msgid "No automated problems on this page."
+msgstr ""
+
+#: src/Admin/Screens.php:535
+msgid "The engine could not decide these automatically (for example text over a background image). Look at each one; dismiss it if it is fine."
+msgstr ""
+
+#. translators: %d: number of elements
+#: src/Admin/Screens.php:568
+#, php-format
+msgid "%d element"
+msgid_plural "%d elements"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens.php:570
+msgid "All dismissed"
+msgstr ""
+
+#: src/Admin/Screens.php:577
+msgid "Elements on this page"
+msgstr ""
+
+#: src/Admin/Screens.php:594
+#: src/Admin/Screens.php:815
+msgid "Unknown user"
+msgstr ""
+
+#. translators: 1: reason, 2: user name, 3: time ago
+#: src/Admin/Screens.php:600
+#, php-format
+msgid "Dismissed: %1$s (by %2$s, %3$s ago)"
+msgstr ""
+
+#: src/Admin/Screens.php:604
+#: src/Admin/Screens.php:833
+msgid "Restore"
+msgstr ""
+
+#: src/Admin/Screens.php:608
+msgid "Show on page"
+msgstr ""
+
+#. translators: %d: number of elements not listed
+#: src/Admin/Screens.php:620
+#, php-format
+msgid "%d more element is not listed. Fix the ones above and check again."
+msgid_plural "%d more elements are not listed. Fix the ones above and check again."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens.php:643
+msgid "Ignore this issue on every page…"
+msgstr ""
+
+#: src/Admin/Screens.php:643
+msgid "Dismiss…"
+msgstr ""
+
+#: src/Admin/Screens.php:648
+#: src/Admin/Screens.php:806
+msgid "Reason"
+msgstr ""
+
+#: src/Admin/Screens.php:649
+msgid "Choose…"
+msgstr ""
+
+#: src/Admin/Screens.php:655
+#: src/Admin/Screens.php:806
+msgid "Where"
+msgstr ""
+
+#: src/Admin/Screens.php:656
+msgid "Only on this page"
+msgstr ""
+
+#: src/Admin/Screens.php:657
+msgid "On every page (for headers, footers and other shared parts)"
+msgstr ""
+
+#: src/Admin/Screens.php:662
+msgid "Note (optional)"
+msgstr ""
+
+#: src/Admin/Screens.php:664
+msgid "Dismiss"
+msgstr ""
+
+#: src/Admin/Screens.php:679
+msgid "No open issues on the pages checked."
+msgstr ""
+
+#: src/Admin/Screens.php:684
+msgid "Each issue type is listed once with the pages it affects. Fixing a theme or plugin template often fixes many pages at once."
+msgstr ""
+
+#. translators: %d: number of issue types
+#: src/Admin/Screens.php:700
+#, php-format
+msgid "Problems (%d)"
+msgstr ""
+
+#. translators: %d: number of issue types
+#: src/Admin/Screens.php:700
+#, php-format
+msgid "Needs review (%d)"
+msgstr ""
+
+#: src/Admin/Screens.php:714
+msgid "Affected pages"
+msgstr ""
+
+#. translators: %d: number of elements
+#: src/Admin/Screens.php:718
+#, php-format
+msgid "(%d element)"
+msgid_plural "(%d elements)"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of pages
+#: src/Admin/Screens.php:726
+#, php-format
+msgid "…and %d more page. The Pages tab lists them all."
+msgid_plural "…and %d more pages. The Pages tab lists them all."
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Admin/Screens.php:746
+msgid "Run a scan first; the report is built from its results."
+msgstr ""
+
+#: src/Admin/Screens.php:753
+msgid "Results mapped to WCAG 2.2 Level AA and EN 301 549 (the European standard used for the European Accessibility Act and the Web Accessibility Directive). Share it with your developer or keep it as evidence of ongoing work."
+msgstr ""
+
+#: src/Admin/Screens.php:755
+#: src/Admin/Screens.php:756
+msgid "WCAG 2.2 AA at a glance"
+msgstr ""
+
+#: src/Admin/Screens.php:758
+msgid "Success criterion"
+msgstr ""
+
+#: src/Admin/Screens.php:759
+#: src/Support/ReportBuilder.php:176
+msgid "Level"
+msgstr ""
+
+#: src/Admin/Screens.php:761
+#: src/Support/ReportBuilder.php:176
+msgid "Result"
+msgstr ""
+
+#: src/Admin/Screens.php:769
+#: src/Support/ReportBuilder.php:185
+msgid "WCAG 2.2 only"
+msgstr ""
+
+#: src/Admin/Screens.php:779
+msgid "Full report"
+msgstr ""
+
+#: src/Admin/Screens.php:786
+msgid "Need a full audit?"
+msgstr ""
+
+#: src/Admin/Screens.php:787
+msgid "A manual audit covers what automated tools cannot: keyboard use, screen readers, captions and forms. iWorks can audit, fix and write your accessibility statement."
+msgstr ""
+
+#: src/Admin/Screens.php:788
+msgid "Talk to iWorks →"
+msgstr ""
+
+#: src/Admin/Screens.php:799
+msgid "Nothing dismissed. When you mark an issue as not a problem, it is listed here with the reason, who did it and when, so the decision can be reviewed later."
+msgstr ""
+
+#: src/Admin/Screens.php:804
+msgid "Dismissed items"
+msgstr ""
+
+#: src/Admin/Screens.php:806
+msgid "Element"
+msgstr ""
+
+#: src/Admin/Screens.php:806
+msgid "By"
+msgstr ""
+
+#: src/Admin/Screens.php:806
+msgid "When"
+msgstr ""
+
+#: src/Admin/Screens.php:807
+msgid "Actions"
+msgstr ""
+
+#: src/Admin/Screens.php:817
+msgid "Every page"
+msgstr ""
+
+#: src/Admin/Screens.php:820
+msgid "(page no longer in results)"
+msgstr ""
+
+#: src/Admin/Screens.php:824
+msgid "All elements"
+msgstr ""
+
+#: src/Admin/Screens.php:857
+msgid "Technical guidance (Deque University)"
+msgstr ""
+
+#: src/Admin/Screens.php:872
+msgid "Best practice"
+msgstr ""
+
+#. translators: %s: human time difference
+#: src/Admin/Screens.php:1009
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: src/Data/Dismissals.php:29
+msgid "False positive: not actually a problem"
+msgstr ""
+
+#: src/Data/Dismissals.php:30
+msgid "Checked by a person and accessible"
+msgstr ""
+
+#: src/Data/Dismissals.php:31
+msgid "Third-party content we cannot change"
+msgstr ""
+
+#: src/Data/Dismissals.php:32
+msgid "Not relevant to this site"
+msgstr ""
+
+#: src/Frontend/Frontend.php:126
+msgid "Accessibility issues on this page"
+msgstr ""
+
+#: src/Frontend/Frontend.php:127
+msgid "Problem"
+msgstr ""
+
+#: src/Frontend/Frontend.php:129
+msgid "Previous"
+msgstr ""
+
+#: src/Frontend/Frontend.php:130
+msgid "Next"
+msgstr ""
+
+#: src/Frontend/Frontend.php:131
+msgid "Hide highlights"
+msgstr ""
+
+#: src/Frontend/Frontend.php:132
+msgid "Back to results"
+msgstr ""
+
+#. translators: 1: current element number, 2: total elements
+#: src/Frontend/Frontend.php:134
+#, php-format
+msgid "Element %1$d of %2$d"
+msgstr ""
+
+#: src/Frontend/Frontend.php:135
+msgid "This element was not found on the page now. It may have been fixed, or it only appears after an interaction (for example inside a menu or pop-up)."
+msgstr ""
+
+#: src/Frontend/Frontend.php:136
+msgid "No open issues to show on this page."
+msgstr ""
+
+#: src/Frontend/Frontend.php:137
+msgid "Highlights come from the last scan. Rescan after making changes."
+msgstr ""
+
+#: src/Frontend/Frontend.php:167
+#: src/Plugin.php:230
+msgid "Check accessibility"
+msgstr ""
+
+#: src/Plugin.php:95
+#: src/Plugin.php:108
+msgid "Accessibility Checker"
+msgstr ""
+
+#: src/Plugin.php:100
+msgid "Full-site accessibility scan with axe-core, plain-English fixes and a WCAG 2.2 AA / EN 301 549 report."
+msgstr ""
+
+#: src/Plugin.php:102
+msgid "Checks the real pages your visitors see. No overlay, nothing sent to third parties."
+msgstr ""
+
+#: src/Plugin.php:109
+msgid "Accessibility"
+msgstr ""
+
+#: src/Plugin.php:168
+msgid "Collecting pages to check…"
+msgstr ""
+
+#. translators: 1: current page number, 2: total pages, 3: page title
+#: src/Plugin.php:170
+#, php-format
+msgid "Checking %1$d of %2$d: %3$s"
+msgstr ""
+
+#. translators: %s: page title
+#: src/Plugin.php:172
+#, php-format
+msgid "Checking %s…"
+msgstr ""
+
+#. translators: %d: number of pages
+#: src/Plugin.php:174
+#, php-format
+msgid "Finished. %d page checked."
+msgstr ""
+
+#. translators: %d: number of pages
+#: src/Plugin.php:176
+#, php-format
+msgid "Finished. %d pages checked."
+msgstr ""
+
+#: src/Plugin.php:177
+msgid "Finished."
+msgstr ""
+
+#: src/Plugin.php:178
+msgid "Stopped. Results so far are saved and you can resume later."
+msgstr ""
+
+#. translators: 1: number of problem elements, 2: number of needs-review items
+#: src/Plugin.php:180
+#, php-format
+msgid "Problems: %1$d · Needs review: %2$d"
+msgstr ""
+
+#: src/Plugin.php:182
+msgid "View details"
+msgstr ""
+
+#: src/Plugin.php:183
+msgid "Something went wrong. Please reload the page and try again."
+msgstr ""
+
+#: src/Plugin.php:184
+msgid "A scan is running. Leaving this page will pause it."
+msgstr ""
+
+#: src/Plugin.php:185
+msgid "Delete all scan results? Dismissed items are kept."
+msgstr ""
+
+#: src/Plugin.php:186
+msgid "Working…"
+msgstr ""
+
+#: src/Scan/ScanErrors.php:24
+msgid "The page took longer than 45 seconds to load, so it was skipped. Try checking it on its own."
+msgstr ""
+
+#: src/Scan/ScanErrors.php:26
+msgid "The page could not be opened inside the checker. A security plugin or server header (X-Frame-Options: DENY or a Content-Security-Policy frame-ancestors rule) blocks it. Allow same-origin framing (SAMEORIGIN) and try again."
+msgstr ""
+
+#: src/Scan/ScanErrors.php:28
+msgid "The page redirected to a different address (another domain or http/https), so it could not be checked from here."
+msgstr ""
+
+#: src/Scan/ScanErrors.php:30
+msgid "The checker script could not be loaded into the page. A Content-Security-Policy may be blocking scripts from this plugin."
+msgstr ""
+
+#: src/Scan/ScanErrors.php:32
+msgid "The accessibility engine stopped with an error on this page. This can happen with very unusual markup; try checking the page again."
+msgstr ""
+
+#: src/Scan/ScanErrors.php:34
+msgid "The results for this page were too large to save."
+msgstr ""
+
+#: src/Scan/ScanErrors.php:36
+msgid "The page could not be checked."
+msgstr ""
+
+#: src/Scan/UrlCollector.php:87
+#: src/Scan/UrlCollector.php:242
+msgid "Home page"
+msgstr ""
+
+#. translators: %s: post type name, e.g. Products
+#: src/Scan/UrlCollector.php:151
+#, php-format
+msgid "Archive: %s"
+msgstr ""
+
+#. translators: 1: taxonomy name, e.g. Categories, 2: term name
+#: src/Scan/UrlCollector.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: src/Scan/UrlCollector.php:198
+msgid "Author archive"
+msgstr ""
+
+#: src/Scan/UrlCollector.php:206
+msgid "Search results"
+msgstr ""
+
+#: src/Scan/UrlCollector.php:212
+msgid "Page not found (404)"
+msgstr ""
+
+#. translators: 1: number of elements, 2: number of rules. %3$s is a translated label such as "Problems".
+#: src/Support/ReportBuilder.php:68
+#, php-format
+msgid "%3$s: %1$d element across %2$d types of issue"
+msgid_plural "%3$s: %1$d elements across %2$d types of issue"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of elements, 2: number of pages
+#: src/Support/ReportBuilder.php:87
+#, php-format
+msgid "%1$s element on %2$s pages"
+msgid_plural "%1$s elements on %2$s pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Support/ReportBuilder.php:102
+msgid "Fails"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:106
+msgid "No automated failures"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:108
+msgid "Manual check needed"
+msgstr ""
+
+#. translators: %s: site name
+#: src/Support/ReportBuilder.php:126
+#, php-format
+msgid "Accessibility report: %s"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:128
+msgid "Site"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:129
+msgid "Report date"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:131
+msgid "Last page checked"
+msgstr ""
+
+#. translators: %d: number of pages
+#: src/Support/ReportBuilder.php:135
+#, php-format
+msgid "%d could not be checked"
+msgid_plural "%d could not be checked"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Support/ReportBuilder.php:138
+msgid "Standard"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:138
+msgid "clause 9 (web content)"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:139
+msgid "Tool"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:142
+msgid "Summary"
+msgstr ""
+
+#. translators: 1: pages without problems, 2: pages checked
+#: src/Support/ReportBuilder.php:147
+#, php-format
+msgid "Pages with no automated problems: %1$d of %2$d"
+msgstr ""
+
+#. translators: %d: number of success criteria
+#: src/Support/ReportBuilder.php:156
+#, php-format
+msgid "WCAG 2.2 AA success criterion with automated failures: %d"
+msgid_plural "WCAG 2.2 AA success criteria with automated failures: %d"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: number of dismissed items
+#: src/Support/ReportBuilder.php:163
+#, php-format
+msgid "Item dismissed by a person (with reasons, listed in the plugin): %d"
+msgid_plural "Items dismissed by a person (with reasons, listed in the plugin): %d"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Support/ReportBuilder.php:169
+msgid "What this report can and cannot tell you"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:171
+msgid "Automated testing finds roughly a third of accessibility problems. It is reliable for things like missing alternative text, low colour contrast, missing form labels and broken ARIA, but it cannot judge whether alt text is meaningful, whether the site works with a keyboard alone, or whether videos have accurate captions. \"No automated failures\" is not the same as \"conforms\". A full conformance claim under the European Accessibility Act needs a manual audit by a person."
+msgstr ""
+
+#: src/Support/ReportBuilder.php:174
+msgid "Results by WCAG 2.2 success criterion"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:176
+msgid "Criterion"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:176
+msgid "Pages affected"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:205
+msgid "Problems found"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:205
+msgid "Needs review by a person"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:215
+msgid "Best practice (not a WCAG requirement)"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:217
+msgid "Rule"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:221
+msgid "Why it matters"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:224
+msgid "How to fix"
+msgstr ""
+
+#. translators: %d: number of further pages
+#: src/Support/ReportBuilder.php:234
+#, php-format
+msgid "…and %d more page"
+msgid_plural "…and %d more pages"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/Support/ReportBuilder.php:243
+msgid "Pages that could not be checked"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:259
+msgid "Manual checks to do next"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:261
+msgid "Use the site with only a keyboard (Tab, Shift+Tab, Enter, Space, Esc). Can you reach and use every link, menu, form and pop-up, and always see where focus is?"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:262
+msgid "Zoom the browser to 200% and 400%. Does everything still fit and work without scrolling sideways?"
+msgstr ""
+
+#: src/Support/ReportBuilder.php:263
+msgid "Try a screen reader (VoiceOver on Mac/iPhone, NVDA on Windows, TalkBack on Android) on your key pages and forms."
+msgstr ""
+
+#: src/Support/ReportBuilder.php:264
+msgid "Check that alt text is meaningful, videos have accurate captions, and form errors are explained in text."
+msgstr ""
+
+#: src/Support/ReportBuilder.php:265
+msgid "Publish an accessibility statement with a way for visitors to report problems (required for public sector sites and expected under the European Accessibility Act)."
+msgstr ""
+
+#: src/Support/ReportBuilder.php:267
+msgid "Need a full manual audit, fixes or an accessibility statement? iWorks can help: https://www.iworks.ie"
+msgstr ""
+
+#: src/Support/RuleGuide.php:37
+msgid "Open the technical guidance link below for the exact requirement. If the element comes from a plugin or theme, ask its developer to fix it."
+msgstr ""
+
+#: src/Support/RuleGuide.php:48
+msgid "In the block editor select the image and fill in \"Alternative text\" in the block settings, or edit the image in Media Library. Describe what the image shows or does. If it is purely decorative, leave the alt text empty on purpose (in code: alt=\"\")."
+msgstr ""
+
+#: src/Support/RuleGuide.php:49
+msgid "Screen readers announce this control with no name, so people who cannot see it do not know what it does."
+msgstr ""
+
+#: src/Support/RuleGuide.php:53
+msgid "Images are missing alternative text"
+msgstr ""
+
+#: src/Support/RuleGuide.php:54
+msgid "Blind and low-vision visitors use screen readers that read alt text aloud. Without it they hear the file name or nothing at all."
+msgstr ""
+
+#: src/Support/RuleGuide.php:58
+msgid "Image buttons have no text alternative"
+msgstr ""
+
+#: src/Support/RuleGuide.php:60
+msgid "Add an alt attribute to the image button that says what it does, for example alt=\"Search\". This usually lives in a theme or plugin template."
+msgstr ""
+
+#: src/Support/RuleGuide.php:63
+msgid "Elements shown as images have no text alternative"
+msgstr ""
+
+#: src/Support/RuleGuide.php:64
+msgid "The element is marked as an image (role=\"img\") but has no text describing it, so screen reader users miss its meaning."
+msgstr ""
+
+#: src/Support/RuleGuide.php:65
+msgid "Add an aria-label describing the image, or aria-hidden=\"true\" if it is decorative. Icon fonts and CSS background images often cause this."
+msgstr ""
+
+#: src/Support/RuleGuide.php:68
+msgid "SVG images have no text alternative"
+msgstr ""
+
+#: src/Support/RuleGuide.php:69
+msgid "Screen readers cannot describe an SVG graphic that has no title or label."
+msgstr ""
+
+#: src/Support/RuleGuide.php:70
+msgid "Add a <title> inside the SVG or an aria-label on it. If the SVG is decorative (for example an icon next to text), add aria-hidden=\"true\" instead."
+msgstr ""
+
+#: src/Support/RuleGuide.php:73
+msgid "Image map areas have no text alternative"
+msgstr ""
+
+#: src/Support/RuleGuide.php:74
+msgid "Each clickable area of an image map is a link. Without alt text, screen reader users cannot tell where it goes."
+msgstr ""
+
+#: src/Support/RuleGuide.php:75
+msgid "Give every <area> element an alt attribute naming its destination, or replace the image map with normal links."
+msgstr ""
+
+#: src/Support/RuleGuide.php:78
+msgid "Embedded objects have no text alternative"
+msgstr ""
+
+#: src/Support/RuleGuide.php:79
+msgid "Content embedded with <object> is invisible to screen readers unless it has a text alternative."
+msgstr ""
+
+#: src/Support/RuleGuide.php:80
+msgid "Add an aria-label or title to the <object>, or provide the same content as text or a link next to it."
+msgstr ""
+
+#: src/Support/RuleGuide.php:83
+msgid "Alt text repeats the text next to the image"
+msgstr ""
+
+#: src/Support/RuleGuide.php:84
+msgid "Screen reader users hear the same words twice, which is tiring and confusing."
+msgstr ""
+
+#: src/Support/RuleGuide.php:85
+msgid "Change the image alt text so it adds information, or leave it empty if the caption or link text already says everything."
+msgstr ""
+
+#: src/Support/RuleGuide.php:88
+msgid "Text does not have enough colour contrast"
+msgstr ""
+
+#: src/Support/RuleGuide.php:89
+msgid "Low-contrast text is hard or impossible to read for people with low vision or colour blindness, and for everyone on a phone in sunlight. WCAG AA needs 4.5:1 for normal text and 3:1 for large text."
+msgstr ""
+
+#: src/Support/RuleGuide.php:90
+msgid "Make the text darker or the background lighter (or the other way round). In the block editor use the block's Color settings, which warn about low contrast. For theme-wide colours, change them in Appearance → Editor → Styles or the Customizer."
+msgstr ""
+
+#: src/Support/RuleGuide.php:93
+msgid "Links have no text"
+msgstr ""
+
+#: src/Support/RuleGuide.php:94
+msgid "A link with no readable text is announced as just \"link\", so keyboard and screen reader users cannot tell where it goes. This often happens with icon-only social links or linked images with no alt text."
+msgstr ""
+
+#: src/Support/RuleGuide.php:95
+msgid "Add visible link text, or alt text on the linked image, or an aria-label on the link (for example aria-label=\"iWorks on LinkedIn\"). For Social Icons blocks, fill in each icon's label."
+msgstr ""
+
+#: src/Support/RuleGuide.php:98
+msgid "Links inside text can only be spotted by colour"
+msgstr ""
+
+#: src/Support/RuleGuide.php:99
+msgid "People who cannot tell colours apart will not notice a link that differs from the surrounding text only by colour."
+msgstr ""
+
+#: src/Support/RuleGuide.php:100
+msgid "Underline links inside paragraphs (most themes allow this in Styles → Elements → Links), or make sure the link colour has 3:1 contrast with the text and changes on hover and focus."
+msgstr ""
+
+#: src/Support/RuleGuide.php:103
+msgid "Buttons have no accessible name"
+msgstr ""
+
+#: src/Support/RuleGuide.php:105
+msgid "Give the button visible text, or an aria-label describing what it does (for example aria-label=\"Open menu\"). Icon-only buttons in headers, sliders and pop-ups are the usual culprits."
+msgstr ""
+
+#: src/Support/RuleGuide.php:108
+msgid "Input buttons have no text"
+msgstr ""
+
+#: src/Support/RuleGuide.php:110
+msgid "Add a value attribute (the button text) to the <input type=\"submit|button|reset\">, or an aria-label."
+msgstr ""
+
+#: src/Support/RuleGuide.php:113
+msgid "Form fields have no label"
+msgstr ""
+
+#: src/Support/RuleGuide.php:114
+msgid "Without a label, screen reader users do not know what to type into the field. Placeholder text is not a label: it disappears once typing starts."
+msgstr ""
+
+#: src/Support/RuleGuide.php:115
+msgid "In your form plugin, make sure every field has a label (you can visually hide it if the design needs that, but do not delete it). In code, connect a <label for=\"…\"> to the field's id."
+msgstr ""
+
+#: src/Support/RuleGuide.php:118
+msgid "Drop-down lists have no label"
+msgstr ""
+
+#: src/Support/RuleGuide.php:119
+msgid "Screen reader users hear \"combo box\" with no idea what they are choosing."
+msgstr ""
+
+#: src/Support/RuleGuide.php:120
+msgid "Add a label to the drop-down in your form plugin or template, or an aria-label if a visible label is not possible."
+msgstr ""
+
+#: src/Support/RuleGuide.php:123
+msgid "Form fields have more than one label"
+msgstr ""
+
+#: src/Support/RuleGuide.php:124
+msgid "Assistive technology may read only one of the labels, or read them in a confusing order."
+msgstr ""
+
+#: src/Support/RuleGuide.php:125
+msgid "Keep one <label> per field. Put extra hints in a description linked with aria-describedby."
+msgstr ""
+
+#: src/Support/RuleGuide.php:128
+msgid "Form autocomplete values are invalid"
+msgstr ""
+
+#: src/Support/RuleGuide.php:129
+msgid "Correct autocomplete values let browsers fill in name, email and address fields, which helps people with motor and memory difficulties."
+msgstr ""
+
+#: src/Support/RuleGuide.php:130
+msgid "Use a standard value such as autocomplete=\"email\", \"name\" or \"postal-code\". Many form plugins have an autocomplete setting per field."
+msgstr ""
+
+#: src/Support/RuleGuide.php:133
+msgid "The page has no title"
+msgstr ""
+
+#: src/Support/RuleGuide.php:134
+msgid "The page title is the first thing a screen reader announces and the label on the browser tab. Without it people cannot tell pages apart."
+msgstr ""
+
+#: src/Support/RuleGuide.php:135
+msgid "Make sure the theme supports \"title-tag\" (add_theme_support( 'title-tag' )) or outputs a <title>. SEO plugins also set it."
+msgstr ""
+
+#: src/Support/RuleGuide.php:138
+msgid "The page language is not set"
+msgstr ""
+
+#: src/Support/RuleGuide.php:139
+msgid "Screen readers use the page language to choose the right voice and pronunciation. Without it, English text may be read with the wrong accent, or the other way round."
+msgstr ""
+
+#: src/Support/RuleGuide.php:140
+msgid "The theme's header should output <html <?php language_attributes(); ?>>. Check Settings → General → Site Language too."
+msgstr ""
+
+#: src/Support/RuleGuide.php:143
+msgid "The page language code is not valid"
+msgstr ""
+
+#: src/Support/RuleGuide.php:144
+msgid "An unrecognised language code is as bad as none: screen readers fall back to a default voice."
+msgstr ""
+
+#: src/Support/RuleGuide.php:145
+msgid "Use a valid code such as en, en-IE or ga. Check Settings → General → Site Language and any multilingual plugin settings."
+msgstr ""
+
+#: src/Support/RuleGuide.php:148
+msgid "The page has two different language settings"
+msgstr ""
+
+#: src/Support/RuleGuide.php:149
+msgid "When lang and xml:lang disagree, assistive technology may pick the wrong language."
+msgstr ""
+
+#: src/Support/RuleGuide.php:150
+msgid "Remove xml:lang from the <html> element, or make it match lang."
+msgstr ""
+
+#: src/Support/RuleGuide.php:153
+msgid "A language code inside the page is not valid"
+msgstr ""
+
+#: src/Support/RuleGuide.php:154
+msgid "Sections in another language should be marked so they are pronounced correctly. An invalid code breaks this."
+msgstr ""
+
+#: src/Support/RuleGuide.php:155
+msgid "Correct the lang attribute on the element shown, for example lang=\"ga\" for Irish or lang=\"fr\" for French."
+msgstr ""
+
+#: src/Support/RuleGuide.php:158
+msgid "Heading levels skip a step"
+msgstr ""
+
+#: src/Support/RuleGuide.php:159
+msgid "Screen reader users jump between headings to scan a page, like a table of contents. Skipping levels (H2 straight to H4) makes the structure confusing."
+msgstr ""
+
+#: src/Support/RuleGuide.php:160
+msgid "Choose heading levels by structure, not by size: H2 for sections, H3 inside them. Change the look with the block's typography settings instead of picking a smaller heading level."
+msgstr ""
+
+#: src/Support/RuleGuide.php:163
+msgid "Headings are empty"
+msgstr ""
+
+#: src/Support/RuleGuide.php:164
+msgid "Screen readers announce an empty heading, which is confusing and wastes time."
+msgstr ""
+
+#: src/Support/RuleGuide.php:165
+msgid "Delete empty Heading blocks, or add text. Some page builders leave empty headings behind when a widget is hidden."
+msgstr ""
+
+#: src/Support/RuleGuide.php:168
+msgid "The page has no main heading (H1)"
+msgstr ""
+
+#: src/Support/RuleGuide.php:169
+msgid "The H1 tells visitors what the page is about. Screen reader users often jump to it first."
+msgstr ""
+
+#: src/Support/RuleGuide.php:170
+msgid "Make sure the page title is shown as an H1 (most themes do this), or add one Heading block set to H1 at the top."
+msgstr ""
+
+#: src/Support/RuleGuide.php:173
+msgid "The page has no main content area"
+msgstr ""
+
+#: src/Support/RuleGuide.php:174
+msgid "A <main> landmark lets keyboard and screen reader users skip straight past the header and menu to the content."
+msgstr ""
+
+#: src/Support/RuleGuide.php:175
+msgid "The theme should wrap the content in <main>. In block themes, set the content Group block's HTML element to <main> under Advanced."
+msgstr ""
+
+#: src/Support/RuleGuide.php:178
+msgid "Some content is outside any page region"
+msgstr ""
+
+#: src/Support/RuleGuide.php:179
+msgid "Screen reader users navigate by regions (header, navigation, main, footer). Content outside them is easy to miss."
+msgstr ""
+
+#: src/Support/RuleGuide.php:180
+msgid "Make sure everything sits inside <header>, <nav>, <main>, <aside> or <footer>. Cookie banners and chat widgets often cause this; ask their developer, or use the HTML element setting on Group blocks."
+msgstr ""
+
+#: src/Support/RuleGuide.php:183
+msgid "There is no way to skip to the main content"
+msgstr ""
+
+#: src/Support/RuleGuide.php:184
+msgid "Keyboard users must tab through the whole menu on every page unless there is a skip link or landmarks."
+msgstr ""
+
+#: src/Support/RuleGuide.php:185
+msgid "Add a \"Skip to content\" link as the first focusable element and a <main> landmark. Most modern themes include both; older themes may not."
+msgstr ""
+
+#: src/Support/RuleGuide.php:188
+msgid "The skip link points nowhere"
+msgstr ""
+
+#: src/Support/RuleGuide.php:189
+msgid "A \"Skip to content\" link whose target does not exist leaves keyboard users stuck at the top."
+msgstr ""
+
+#: src/Support/RuleGuide.php:190
+msgid "Make the skip link's href (for example #content) match the id of the main content element."
+msgstr ""
+
+#: src/Support/RuleGuide.php:193
+msgid "Lists are built incorrectly"
+msgstr ""
+
+#: src/Support/RuleGuide.php:194
+msgid "Screen readers announce how many items a list has. Lists with other elements directly inside them break this."
+msgstr ""
+
+#: src/Support/RuleGuide.php:195
+msgid "<ul> and <ol> may only contain <li> items (and script/template tags). Usually a theme or plugin template needs fixing."
+msgstr ""
+
+#: src/Support/RuleGuide.php:198
+msgid "List items are outside a list"
+msgstr ""
+
+#: src/Support/RuleGuide.php:199
+msgid "A list item with no list around it is not announced as part of a list."
+msgstr ""
+
+#: src/Support/RuleGuide.php:200
+msgid "Wrap <li> elements in a <ul> or <ol>."
+msgstr ""
+
+#: src/Support/RuleGuide.php:203
+msgid "Definition lists are built incorrectly"
+msgstr ""
+
+#: src/Support/RuleGuide.php:204
+msgid "Screen readers rely on correct structure to pair terms with their definitions."
+msgstr ""
+
+#: src/Support/RuleGuide.php:205
+msgid "<dl> may only contain <dt> and <dd> groups (optionally wrapped in <div>)."
+msgstr ""
+
+#: src/Support/RuleGuide.php:208
+msgid "Definition terms are outside a definition list"
+msgstr ""
+
+#: src/Support/RuleGuide.php:209
+msgid "Terms and definitions outside a <dl> lose their relationship."
+msgstr ""
+
+#: src/Support/RuleGuide.php:210
+msgid "Wrap <dt> and <dd> elements in a <dl>."
+msgstr ""
+
+#: src/Support/RuleGuide.php:213
+msgid "IDs used by labels are duplicated"
+msgstr ""
+
+#: src/Support/RuleGuide.php:214
+msgid "When two elements share an id that a label or ARIA attribute points to, assistive technology may announce the wrong one."
+msgstr ""
+
+#: src/Support/RuleGuide.php:215
+msgid "Make every id unique on the page. Repeated widgets or forms shown twice (for example in a header and a footer) are the usual cause."
+msgstr ""
+
+#: src/Support/RuleGuide.php:218
+msgid "Embedded frames have no title"
+msgstr ""
+
+#: src/Support/RuleGuide.php:219
+msgid "Screen reader users hear \"frame\" with no idea whether it is a video, a map or a form."
+msgstr ""
+
+#: src/Support/RuleGuide.php:220
+msgid "Add a title attribute to the <iframe>, for example title=\"Map of our office\". Many embed blocks and plugins have a title setting."
+msgstr ""
+
+#: src/Support/RuleGuide.php:223
+msgid "Embedded frames share the same title"
+msgstr ""
+
+#: src/Support/RuleGuide.php:224
+msgid "Identical titles make it impossible to tell embedded frames apart."
+msgstr ""
+
+#: src/Support/RuleGuide.php:225
+msgid "Give each <iframe> a title that describes its own content."
+msgstr ""
+
+#: src/Support/RuleGuide.php:228
+msgid "Frames with interactive content cannot be reached by keyboard"
+msgstr ""
+
+#: src/Support/RuleGuide.php:229
+msgid "Keyboard users cannot reach links or buttons inside the frame."
+msgstr ""
+
+#: src/Support/RuleGuide.php:230
+msgid "Remove tabindex=\"-1\" from the <iframe> when it contains links, buttons or form fields."
+msgstr ""
+
+#: src/Support/RuleGuide.php:233
+msgid "Zooming is disabled"
+msgstr ""
+
+#: src/Support/RuleGuide.php:234
+msgid "People with low vision pinch to zoom on phones. Blocking zoom makes the site unreadable for them."
+msgstr ""
+
+#: src/Support/RuleGuide.php:235
+msgid "Remove user-scalable=no and any maximum-scale below 2 from the viewport meta tag, usually in the theme's header.php or a plugin setting."
+msgstr ""
+
+#: src/Support/RuleGuide.php:238
+msgid "The page refreshes or redirects on a timer"
+msgstr ""
+
+#: src/Support/RuleGuide.php:239
+msgid "An automatic refresh can move people away before they finish reading, and screen readers start again from the top."
+msgstr ""
+
+#: src/Support/RuleGuide.php:240
+msgid "Remove the meta refresh tag. Use a proper server redirect instead (for example with a redirection plugin)."
+msgstr ""
+
+#: src/Support/RuleGuide.php:243
+msgid "Clickable targets are too small or too close together"
+msgstr ""
+
+#: src/Support/RuleGuide.php:244
+msgid "Small targets are hard to tap for people with tremors, large fingers or on a moving bus. WCAG 2.2 asks for at least 24 by 24 pixels or enough space around them."
+msgstr ""
+
+#: src/Support/RuleGuide.php:245
+msgid "Increase padding on small links and buttons (pagination, social icons, carousel dots), or add space between them."
+msgstr ""
+
+#: src/Support/RuleGuide.php:248
+msgid "Scrollable areas cannot be scrolled with the keyboard"
+msgstr ""
+
+#: src/Support/RuleGuide.php:249
+msgid "If a box scrolls but cannot receive keyboard focus, keyboard users cannot read what is hidden inside it."
+msgstr ""
+
+#: src/Support/RuleGuide.php:250
+msgid "Add tabindex=\"0\" and an accessible name (aria-label) to the scrolling element, or make sure it contains a focusable element."
+msgstr ""
+
+#: src/Support/RuleGuide.php:253
+msgid "Interactive controls are nested inside each other"
+msgstr ""
+
+#: src/Support/RuleGuide.php:254
+msgid "A button inside a link (or similar) confuses screen readers and keyboard focus: one of them is often unreachable."
+msgstr ""
+
+#: src/Support/RuleGuide.php:255
+msgid "Restructure so links and buttons sit side by side, not inside each other. Card designs in page builders are a common cause."
+msgstr ""
+
+#: src/Support/RuleGuide.php:258
+msgid "Hidden elements can still receive keyboard focus"
+msgstr ""
+
+#: src/Support/RuleGuide.php:259
+msgid "Keyboard users land on links or buttons that screen readers say do not exist, which is very disorienting."
+msgstr ""
+
+#: src/Support/RuleGuide.php:260
+msgid "Either remove aria-hidden=\"true\", or make the focusable elements inside it unfocusable (tabindex=\"-1\") or hidden with display:none. Off-canvas menus and sliders often cause this."
+msgstr ""
+
+#: src/Support/RuleGuide.php:263
+msgid "The whole page is hidden from screen readers"
+msgstr ""
+
+#: src/Support/RuleGuide.php:264
+msgid "aria-hidden on <body> hides the entire site from assistive technology."
+msgstr ""
+
+#: src/Support/RuleGuide.php:265
+msgid "Remove aria-hidden=\"true\" from the <body> element. A pop-up or modal plugin usually adds it."
+msgstr ""
+
+#: src/Support/RuleGuide.php:268
+msgid "ARIA attributes are used on the wrong elements"
+msgstr ""
+
+#: src/Support/RuleGuide.php:269
+msgid "ARIA attributes that do not belong to an element's role are ignored or misread by assistive technology."
+msgstr ""
+
+#: src/Support/RuleGuide.php:270
+msgid "Remove the attribute or change the element's role. This is almost always in theme or plugin code; report it to the developer."
+msgstr ""
+
+#: src/Support/RuleGuide.php:273
+msgid "ARIA roles are missing required attributes"
+msgstr ""
+
+#: src/Support/RuleGuide.php:274
+msgid "Some roles need extra information (for example a checkbox needs aria-checked) or screen readers cannot report their state."
+msgstr ""
+
+#: src/Support/RuleGuide.php:275
+msgid "Add the missing attribute named in the details, or use a native HTML element (<button>, <input type=\"checkbox\">) which provides it automatically."
+msgstr ""
+
+#: src/Support/RuleGuide.php:278
+msgid "ARIA widgets are missing required child elements"
+msgstr ""
+
+#: src/Support/RuleGuide.php:279
+msgid "Roles like list, menu or tablist must contain the right child roles or screen readers cannot navigate them."
+msgstr ""
+
+#: src/Support/RuleGuide.php:280
+msgid "Add the required child roles (for example role=\"tab\" inside role=\"tablist\"), or remove the parent role."
+msgstr ""
+
+#: src/Support/RuleGuide.php:283
+msgid "ARIA elements are missing their required parent"
+msgstr ""
+
+#: src/Support/RuleGuide.php:284
+msgid "Roles like tab or menuitem only make sense inside their container role."
+msgstr ""
+
+#: src/Support/RuleGuide.php:285
+msgid "Wrap the elements in the required parent role, or remove their role attribute."
+msgstr ""
+
+#: src/Support/RuleGuide.php:288
+msgid "ARIA attributes are misspelled or do not exist"
+msgstr ""
+
+#: src/Support/RuleGuide.php:289
+msgid "Unknown ARIA attributes are ignored, so the information they were meant to give is lost."
+msgstr ""
+
+#: src/Support/RuleGuide.php:290
+msgid "Correct the attribute name (for example aria-labelledby, not aria-labeledby)."
+msgstr ""
+
+#: src/Support/RuleGuide.php:293
+msgid "ARIA attributes have invalid values"
+msgstr ""
+
+#: src/Support/RuleGuide.php:294
+msgid "An invalid value (for example aria-expanded=\"yes\" or a reference to an id that does not exist) is ignored or misreported."
+msgstr ""
+
+#: src/Support/RuleGuide.php:295
+msgid "Use a valid value: true/false for states, and ids that exist on the page for references."
+msgstr ""
+
+#: src/Support/RuleGuide.php:298
+msgid "Elements use ARIA roles that do not exist"
+msgstr ""
+
+#: src/Support/RuleGuide.php:299
+msgid "An invalid role is ignored, so the element is announced incorrectly."
+msgstr ""
+
+#: src/Support/RuleGuide.php:300
+msgid "Correct or remove the role attribute."
+msgstr ""
+
+#: src/Support/RuleGuide.php:303
+msgid "ARIA buttons, links or menu items have no name"
+msgstr ""
+
+#: src/Support/RuleGuide.php:305
+msgid "Add text inside the element or an aria-label."
+msgstr ""
+
+#: src/Support/RuleGuide.php:308
+msgid "ARIA input fields have no name"
+msgstr ""
+
+#: src/Support/RuleGuide.php:309
+msgid "Screen reader users do not know what to enter in the field."
+msgstr ""
+
+#: src/Support/RuleGuide.php:310
+msgid "Add an aria-label or aria-labelledby pointing to visible label text."
+msgstr ""
+
+#: src/Support/RuleGuide.php:313
+msgid "ARIA toggles have no name"
+msgstr ""
+
+#: src/Support/RuleGuide.php:314
+msgid "Screen reader users hear \"switch\" or \"checkbox\" without knowing what it controls."
+msgstr ""
+
+#: src/Support/RuleGuide.php:315
+msgid "Add visible text or an aria-label to the toggle."
+msgstr ""
+
+#: src/Support/RuleGuide.php:318
+msgid "ARIA labels are used where they are not allowed"
+msgstr ""
+
+#: src/Support/RuleGuide.php:319
+msgid "Some elements (like a plain <div> or <span>) cannot be named with aria-label, so the label is never announced."
+msgstr ""
+
+#: src/Support/RuleGuide.php:320
+msgid "Move the label onto an element that supports it, give the element a suitable role, or use visible text instead."
+msgstr ""
+
+#: src/Support/RuleGuide.php:323
+msgid "Elements force a custom keyboard order"
+msgstr ""
+
+#: src/Support/RuleGuide.php:324
+msgid "A tabindex above 0 makes focus jump around the page in an unexpected order."
+msgstr ""
+
+#: src/Support/RuleGuide.php:325
+msgid "Remove positive tabindex values (use 0 or -1 only) and order the HTML the way it should be read."
+msgstr ""
+
+#: src/Support/RuleGuide.php:328
+msgid "Table cells point to headers that do not exist"
+msgstr ""
+
+#: src/Support/RuleGuide.php:329
+msgid "Screen readers announce the column and row headers for each cell. Broken references remove that context."
+msgstr ""
+
+#: src/Support/RuleGuide.php:330
+msgid "Make the headers attribute point to the ids of header cells in the same table, or remove it and use <th scope>."
+msgstr ""
+
+#: src/Support/RuleGuide.php:333
+msgid "Table headers have no data cells"
+msgstr ""
+
+#: src/Support/RuleGuide.php:334
+msgid "A header that describes nothing suggests the table is used for layout or built incorrectly."
+msgstr ""
+
+#: src/Support/RuleGuide.php:335
+msgid "Remove empty header cells, or use the Table block with a header section only when the table holds data."
+msgstr ""
+
+#: src/Support/RuleGuide.php:338
+msgid "Table headers are empty"
+msgstr ""
+
+#: src/Support/RuleGuide.php:339
+msgid "Screen readers announce header text for every cell. An empty header gives no context."
+msgstr ""
+
+#: src/Support/RuleGuide.php:340
+msgid "Add text to each header cell, or use a normal <td> for empty corner cells."
+msgstr ""
+
+#: src/Support/RuleGuide.php:343
+msgid "Videos have no captions"
+msgstr ""
+
+#: src/Support/RuleGuide.php:344
+msgid "Deaf and hard-of-hearing visitors, and anyone watching with the sound off, miss what is said."
+msgstr ""
+
+#: src/Support/RuleGuide.php:345
+msgid "Add a captions track: in the Video block use \"Text tracks\" to upload a .vtt file. For YouTube and Vimeo, add captions on those platforms."
+msgstr ""
+
+#: src/Support/RuleGuide.php:348
+msgid "Audio plays automatically"
+msgstr ""
+
+#: src/Support/RuleGuide.php:349
+msgid "Sound that starts on its own drowns out screen readers and is distressing for many people."
+msgstr ""
+
+#: src/Support/RuleGuide.php:350
+msgid "Turn off autoplay on audio and video, or make it muted and provide a pause control."
+msgstr ""
+
+#: src/Support/RuleGuide.php:353
+msgid "Text blinks"
+msgstr ""
+
+#: src/Support/RuleGuide.php:354
+msgid "Blinking content is distracting and can be hard to read for people with attention or vision difficulties."
+msgstr ""
+
+#: src/Support/RuleGuide.php:355
+msgid "Remove the <blink> element."
+msgstr ""
+
+#: src/Support/RuleGuide.php:358
+msgid "Text scrolls automatically"
+msgstr ""
+
+#: src/Support/RuleGuide.php:359
+msgid "Moving text is hard to read and cannot be paused by everyone."
+msgstr ""
+
+#: src/Support/RuleGuide.php:360
+msgid "Remove the <marquee> element, or replace it with static text."
+msgstr ""
+
+#: src/Support/RuleGuide.php:363
+msgid "Inline styles stop people adjusting text spacing"
+msgstr ""
+
+#: src/Support/RuleGuide.php:364
+msgid "People with dyslexia or low vision often increase line and letter spacing with a browser tool. !important inline styles block that."
+msgstr ""
+
+#: src/Support/RuleGuide.php:365
+msgid "Remove !important from inline line-height, letter-spacing and word-spacing styles."
+msgstr ""
+
+#: src/Support/RuleGuide.php:368
+msgid "The accessible name does not match the visible text"
+msgstr ""
+
+#: src/Support/RuleGuide.php:369
+msgid "Voice control users say the words they can see. If the hidden label is different, the command does not work."
+msgstr ""
+
+#: src/Support/RuleGuide.php:370
+msgid "Make the aria-label start with (or contain) the visible text of the control."
+msgstr ""
+
+#: src/Support/RuleGuide.php:373
+msgid "Form fields are labelled only with a tooltip"
+msgstr ""
+
+#: src/Support/RuleGuide.php:374
+msgid "Title tooltips are not shown on touch screens or to keyboard users, and not reliably read by screen readers."
+msgstr ""
+
+#: src/Support/RuleGuide.php:375
+msgid "Add a proper visible <label> for the field."
+msgstr ""
+
+#: src/Support/RuleGuide.php:378
+msgid "Page regions of the same type have the same name"
+msgstr ""
+
+#: src/Support/RuleGuide.php:379
+msgid "Two navigation menus both announced as \"navigation\" are impossible to tell apart."
+msgstr ""
+
+#: src/Support/RuleGuide.php:380
+msgid "Give each repeated region a distinct aria-label, for example \"Main menu\" and \"Footer menu\". The Navigation block has this under Advanced."
+msgstr ""
+
+#: src/Support/RuleGuide.php:383
+msgid "Decorative elements can still be focused or are labelled"
+msgstr ""
+
+#: src/Support/RuleGuide.php:384
+msgid "An element marked as decorative but focusable or labelled is announced inconsistently."
+msgstr ""
+
+#: src/Support/RuleGuide.php:385
+msgid "Remove role=\"presentation\"/\"none\", or remove the tabindex and ARIA attributes from it."
+msgstr ""
+
+#: src/Support/RuleGuide.php:388
+msgid "Server-side image maps are used"
+msgstr ""
+
+#: src/Support/RuleGuide.php:389
+msgid "Server-side image maps only work with a mouse."
+msgstr ""
+
+#: src/Support/RuleGuide.php:390
+msgid "Replace them with normal links or a client-side image map with alt text."
+msgstr ""
+
+#: src/Support/RuleGuide.php:393
+msgid "Expandable sections have no name"
+msgstr ""
+
+#: src/Support/RuleGuide.php:394
+msgid "Screen reader users hear \"collapsed\" with no idea what the section contains."
+msgstr ""
+
+#: src/Support/RuleGuide.php:395
+msgid "Give the Details block's summary (the clickable line) some text."
+msgstr ""
+
+#: src/Support/Wcag.php:207
+msgid "Critical"
+msgstr ""
+
+#: src/Support/Wcag.php:209
+msgid "Serious"
+msgstr ""
+
+#: src/Support/Wcag.php:211
+msgid "Moderate"
+msgstr ""
+
+#: src/Support/Wcag.php:213
+msgid "Minor"
+msgstr ""
+
+#: src/Support/Wcag.php:215
+msgid "Unknown"
+msgstr ""
